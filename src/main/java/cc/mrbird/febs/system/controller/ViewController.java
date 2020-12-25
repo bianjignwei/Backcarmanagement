@@ -99,6 +99,27 @@ public class ViewController extends BaseController {
         return FebsUtil.view("system/user/user");
     }
 
+    /**
+     * 用户列表
+     * @return
+     */
+    @GetMapping(FebsConstant.VIEW_PREFIX + "system/userslist")
+    @RequiresPermissions("userslist:view")
+    public String systemUserslist() {
+        return FebsUtil.view("system/user/userslist");
+    }
+
+    /**
+     * 生成记录
+     * @return
+     */
+    @GetMapping(FebsConstant.VIEW_PREFIX + "system/recordsgenerated")
+    @RequiresPermissions("recordsgenerated:view")
+    public String systemRecordsgenerated() {
+        return FebsUtil.view("system/user/recordsgenerated");
+    }
+
+
     @GetMapping(FebsConstant.VIEW_PREFIX + "system/user/add")
     @RequiresPermissions("user:add")
     public String systemUserAdd() {

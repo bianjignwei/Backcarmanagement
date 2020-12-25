@@ -1,0 +1,435 @@
+2020-12-25 08:54:30 febs-shiro INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 08:54:30 febs-shiro INFO  main cc.mrbird.febs.FebsShiroApplication Starting FebsShiroApplication using Java 1.8.0_181 on LAPTOP-2ADCHJEL with PID 13084 (D:\PROJECT\Backcarmanagement\target\classes started by Lenovo in D:\PROJECT\Backcarmanagement)
+2020-12-25 08:54:30 febs-shiro INFO  main cc.mrbird.febs.FebsShiroApplication The following profiles are active: dev
+2020-12-25 08:54:32 febs-shiro INFO  main org.springframework.context.annotation.AutoProxyRegistrar AutoProxyRegistrar was imported but no annotations were found having both 'mode' and 'proxyTargetClass' attributes of type AdviceMode and boolean respectively. This means that auto proxy creator registration and configuration may not have occurred as intended, and components may not be proxied as expected. Check to ensure that AutoProxyRegistrar has been @Import'ed on the same class where these annotations are declared; otherwise remove the import of AutoProxyRegistrar altogether.
+2020-12-25 08:54:32 febs-shiro INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-25 08:54:32 febs-shiro INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-25 08:54:32 febs-shiro INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 41 ms. Found 0 Redis repository interfaces.
+2020-12-25 08:54:33 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 08:54:33 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$425b0107] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 08:54:33 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 08:54:33 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 08:54:33 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'febsProperties' of type [cc.mrbird.febs.common.properties.FebsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 08:54:33 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 08:54:33 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'shiroConfig' of type [cc.mrbird.febs.common.authentication.ShiroConfig$$EnhancerBySpringCGLIB$$444c91df] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 08:54:33 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'shiroRealm' of type [cc.mrbird.febs.common.authentication.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 08:54:34 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 08:54:34 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 08:54:34 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 08:54:34 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 08:54:35 febs-shiro INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+2020-12-25 08:54:35 febs-shiro INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-25 08:54:35 febs-shiro INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2020-12-25 08:54:35 febs-shiro INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-25 08:54:35 febs-shiro INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2020-12-25 08:54:35 febs-shiro INFO  main org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 5075 ms
+2020-12-25 08:54:35 febs-shiro INFO  main cc.mrbird.febs.common.xss.XssFilter ------------ xss filter init ------------
+2020-12-25 08:54:36 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource detect P6SPY plugin and enabled it
+2020-12-25 08:54:36 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource base - Starting...
+2020-12-25 08:54:36 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource base - Start completed.
+2020-12-25 08:54:36 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource quartz - Starting...
+2020-12-25 08:54:37 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource quartz - Start completed.
+2020-12-25 08:54:37 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource [quartz] wrap p6spy plugin
+2020-12-25 08:54:37 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [quartz] success
+2020-12-25 08:54:37 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource [base] wrap p6spy plugin
+2020-12-25 08:54:37 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [base] success
+2020-12-25 08:54:37 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource initial loaded [2] datasource,primary datasource named [base]
+2020-12-25 08:54:39 febs-shiro INFO  main org.quartz.impl.StdSchedulerFactory Using default implementation for ThreadExecutor
+2020-12-25 08:54:39 febs-shiro INFO  main org.quartz.core.SchedulerSignalerImpl Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-12-25 08:54:39 febs-shiro INFO  main org.quartz.core.QuartzScheduler Quartz Scheduler v.2.3.2 created.
+2020-12-25 08:54:39 febs-shiro INFO  main org.springframework.scheduling.quartz.LocalDataSourceJobStore Using db table-based data access locking (synchronization).
+2020-12-25 08:54:39 febs-shiro INFO  main org.springframework.scheduling.quartz.LocalDataSourceJobStore JobStoreCMT initialized.
+2020-12-25 08:54:39 febs-shiro INFO  main org.quartz.core.QuartzScheduler Scheduler meta-data: Quartz Scheduler (v2.3.2) 'FEBS_Scheduler' with instanceId 'LAPTOP-2ADCHJEL1608857679610'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2020-12-25 08:54:39 febs-shiro INFO  main org.quartz.impl.StdSchedulerFactory Quartz scheduler 'FEBS_Scheduler' initialized from an externally provided properties instance.
+2020-12-25 08:54:39 febs-shiro INFO  main org.quartz.impl.StdSchedulerFactory Quartz scheduler version: 2.3.2
+2020-12-25 08:54:39 febs-shiro INFO  main org.quartz.core.QuartzScheduler JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@52f118aa
+2020-12-25 08:54:39 febs-shiro INFO  main p6spy 2020-12-25 08:54:39 | 耗时 30 ms | SQL 语句：
+SELECT job_id jobId, bean_name beanName, method_name methodName, params, cron_expression cronExpression, status, remark, create_time createTime FROM t_job ORDER BY job_id;
+2020-12-25 08:54:44 febs-shiro INFO  main org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-12-25 08:54:44 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService
+2020-12-25 08:54:44 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'febsAsyncThreadPool'
+2020-12-25 08:54:44 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService
+2020-12-25 08:54:44 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'scheduleJobExecutorService'
+2020-12-25 08:54:45 febs-shiro INFO  main org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Adding welcome page template: index
+2020-12-25 08:54:45 febs-shiro INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+2020-12-25 08:54:45 febs-shiro INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 08:54:46 febs-shiro INFO  main org.springframework.scheduling.quartz.SchedulerFactoryBean Will start Quartz Scheduler [FEBS_Scheduler] in 1 seconds
+2020-12-25 08:54:46 febs-shiro INFO  main cc.mrbird.febs.FebsShiroApplication Started FebsShiroApplication in 17.28 seconds (JVM running for 21.095)
+2020-12-25 08:54:47 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.springframework.scheduling.quartz.SchedulerFactoryBean Starting Quartz Scheduler now, after delay of 1 seconds
+2020-12-25 08:54:47 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.springframework.scheduling.quartz.LocalDataSourceJobStore ClusterManager: detected 1 failed or restarted instances.
+2020-12-25 08:54:47 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.springframework.scheduling.quartz.LocalDataSourceJobStore ClusterManager: Scanning for instance "LAPTOP-2ADCHJEL1608801017168"'s failed in-progress jobs.
+2020-12-25 08:54:47 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1608857679610 started.
+2020-12-25 08:54:48 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner  __    ___   _      ___   _     ____ _____  ____ 
+2020-12-25 08:54:48 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner / /`  / / \ | |\/| | |_) | |   | |_   | |  | |_  
+2020-12-25 08:54:48 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner \_\_, \_\_/ |_|  | |_|   |_|__ |_|__  |_|  |_|__ 
+2020-12-25 08:54:48 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner                                                       
+2020-12-25 08:54:48 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner FEBS权限系统启动完毕，系统编译打包时间：2020-12-24 09:29:25，地址：http://192.168.3.63:8080/login
+2020-12-25 08:54:48 febs-shiro INFO  RMI TCP Connection(1)-192.168.3.63 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-25 08:54:48 febs-shiro INFO  RMI TCP Connection(1)-192.168.3.63 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2020-12-25 08:54:48 febs-shiro INFO  RMI TCP Connection(1)-192.168.3.63 org.springframework.web.servlet.DispatcherServlet Completed initialization in 2 ms
+2020-12-25 08:54:50 febs-shiro INFO  http-nio-8080-exec-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Enabling session validation scheduler...
+2020-12-25 08:54:51 febs-shiro INFO  http-nio-8080-exec-3 cc.mrbird.febs.common.aspect.LimitAspect IP:192.168.3.63 第 1 次访问key为 [limit_get_captcha192.168.3.63]，描述为 [获取验证码] 的接口
+2020-12-25 08:55:02 febs-shiro INFO  http-nio-8080-exec-2 cc.mrbird.febs.common.aspect.LimitAspect IP:192.168.3.63 第 1 次访问key为 [limit_login192.168.3.63]，描述为 [登录接口] 的接口
+2020-12-25 08:55:02 febs-shiro INFO  http-nio-8080-exec-2 p6spy 2020-12-25 08:55:02 | 耗时 31 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'MrBird' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-12-25 08:55:02 febs-shiro INFO  http-nio-8080-exec-2 p6spy 2020-12-25 08:55:02 | 耗时 30 ms | SQL 语句：
+SELECT USER_ID, dept_id FROM t_user_data_permission WHERE (USER_ID = '1');
+2020-12-25 08:55:02 febs-shiro INFO  http-nio-8080-exec-2 p6spy 2020-12-25 08:55:02 | 耗时 60 ms | SQL 语句：
+INSERT INTO t_login_log (USERNAME, LOGIN_TIME, LOCATION, IP, `SYSTEM`, BROWSER) VALUES ('MrBird', '2020-12-25T08:55:02.501+0800', '内网IP|0|0|内网IP|内网IP', '192.168.3.63', 'Windows 10', 'Firefox 84');
+2020-12-25 08:55:02 febs-shiro INFO  http-nio-8080-exec-6 p6spy 2020-12-25 08:55:02 | 耗时 30 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird';
+2020-12-25 08:55:02 febs-shiro INFO  http-nio-8080-exec-6 p6spy 2020-12-25 08:55:02 | 耗时 30 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'MrBird' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-12-25 08:55:02 febs-shiro INFO  http-nio-8080-exec-6 p6spy 2020-12-25 08:55:02 | 耗时 32 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'MrBird' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-12-25 08:55:04 febs-shiro INFO  http-nio-8080-exec-7 p6spy 2020-12-25 08:55:04 | 耗时 32 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird') ORDER BY m.order_num;
+2020-12-25 08:55:04 febs-shiro INFO  http-nio-8080-exec-1 p6spy 2020-12-25 08:55:04 | 耗时 30 ms | SQL 语句：
+SELECT count(1) FROM t_login_log;
+2020-12-25 08:55:04 febs-shiro INFO  http-nio-8080-exec-1 p6spy 2020-12-25 08:55:04 | 耗时 31 ms | SQL 语句：
+SELECT count(1) FROM t_login_log WHERE login_time BETWEEN CURDATE() AND DATE_ADD(CURDATE(), INTERVAL 1 DAY);
+2020-12-25 08:55:04 febs-shiro INFO  Febs-Async-Thread1 p6spy 2020-12-25 08:55:04 | 耗时 60 ms | SQL 语句：
+UPDATE t_user SET LAST_LOGIN_TIME = '2020-12-25T08:55:04.628+0800' WHERE (USERNAME = 'MrBird');
+2020-12-25 08:55:04 febs-shiro INFO  http-nio-8080-exec-1 p6spy 2020-12-25 08:55:04 | 耗时 31 ms | SQL 语句：
+SELECT count(DISTINCT (ip)) FROM t_login_log WHERE login_time BETWEEN CURDATE() AND DATE_ADD(CURDATE(), INTERVAL 1 DAY);
+2020-12-25 08:55:04 febs-shiro INFO  http-nio-8080-exec-1 p6spy 2020-12-25 08:55:04 | 耗时 31 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 GROUP BY days;
+2020-12-25 08:55:04 febs-shiro INFO  http-nio-8080-exec-1 p6spy 2020-12-25 08:55:04 | 耗时 28 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 AND l.username = 'MrBird' GROUP BY days;
+2020-12-25 08:59:15 febs-shiro INFO  http-nio-8080-exec-5 p6spy 2020-12-25 08:59:15 | 耗时 28 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird';
+2020-12-25 08:59:15 febs-shiro INFO  http-nio-8080-exec-5 p6spy 2020-12-25 08:59:15 | 耗时 29 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'MrBird' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-12-25 08:59:15 febs-shiro INFO  http-nio-8080-exec-2 p6spy 2020-12-25 08:59:15 | 耗时 28 ms | SQL 语句：
+SELECT DEPT_ID, PARENT_ID, DEPT_NAME, ORDER_NUM, CREATE_TIME, MODIFY_TIME FROM t_dept;
+2020-12-25 08:59:15 febs-shiro INFO  http-nio-8080-exec-3 p6spy 2020-12-25 08:59:15 | 耗时 28 ms | SQL 语句：
+SELECT COUNT(1) FROM t_users u WHERE 1 = 1;
+2020-12-25 08:59:15 febs-shiro INFO  http-nio-8080-exec-3 p6spy 2020-12-25 08:59:15 | 耗时 28 ms | SQL 语句：
+SELECT u.weChatname weChatname, u.CREATE_TIME CREATE_TIME FROM t_users u ORDER BY Id ASC LIMIT 0,10;
+2020-12-25 08:59:21 febs-shiro INFO  http-nio-8080-exec-6 p6spy 2020-12-25 08:59:21 | 耗时 28 ms | SQL 语句：
+SELECT COUNT(1) FROM t_users u WHERE 1 = 1;
+2020-12-25 08:59:21 febs-shiro INFO  http-nio-8080-exec-6 p6spy 2020-12-25 08:59:21 | 耗时 28 ms | SQL 语句：
+SELECT u.weChatname weChatname, u.CREATE_TIME CREATE_TIME FROM t_users u ORDER BY Id ASC LIMIT 10,10;
+2020-12-25 08:59:23 febs-shiro INFO  http-nio-8080-exec-10 p6spy 2020-12-25 08:59:23 | 耗时 28 ms | SQL 语句：
+SELECT COUNT(1) FROM t_users u WHERE 1 = 1;
+2020-12-25 08:59:23 febs-shiro INFO  http-nio-8080-exec-10 p6spy 2020-12-25 08:59:23 | 耗时 28 ms | SQL 语句：
+SELECT u.weChatname weChatname, u.CREATE_TIME CREATE_TIME FROM t_users u ORDER BY Id ASC LIMIT 0,10;
+2020-12-25 09:02:34 febs-shiro INFO  http-nio-8080-exec-5 p6spy 2020-12-25 09:02:34 | 耗时 32 ms | SQL 语句：
+SELECT COUNT(1) FROM t_users u WHERE 1 = 1;
+2020-12-25 09:02:34 febs-shiro INFO  http-nio-8080-exec-5 p6spy 2020-12-25 09:02:34 | 耗时 29 ms | SQL 语句：
+SELECT u.weChatname weChatname, u.CREATE_TIME CREATE_TIME FROM t_users u ORDER BY Id ASC LIMIT 10,10;
+2020-12-25 09:02:35 febs-shiro INFO  http-nio-8080-exec-7 p6spy 2020-12-25 09:02:35 | 耗时 29 ms | SQL 语句：
+SELECT COUNT(1) FROM t_users u WHERE 1 = 1;
+2020-12-25 09:02:35 febs-shiro INFO  http-nio-8080-exec-7 p6spy 2020-12-25 09:02:35 | 耗时 30 ms | SQL 语句：
+SELECT u.weChatname weChatname, u.CREATE_TIME CREATE_TIME FROM t_users u ORDER BY Id ASC LIMIT 0,10;
+2020-12-25 09:04:53 febs-shiro INFO  http-nio-8080-exec-8 cc.mrbird.febs.common.aspect.LimitAspect IP:192.168.3.63 第 1 次访问key为 [limit_get_captcha192.168.3.63]，描述为 [获取验证码] 的接口
+2020-12-25 09:54:50 febs-shiro INFO  SessionValidationThread-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Validating all active sessions...
+2020-12-25 09:54:50 febs-shiro INFO  SessionValidationThread-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Finished session validation.  No sessions were stopped.
+2020-12-25 10:54:50 febs-shiro INFO  SessionValidationThread-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Validating all active sessions...
+2020-12-25 10:54:50 febs-shiro INFO  SessionValidationThread-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Finished session validation.  No sessions were stopped.
+2020-12-25 11:54:50 febs-shiro INFO  SessionValidationThread-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Validating all active sessions...
+2020-12-25 11:54:50 febs-shiro INFO  SessionValidationThread-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Finished session validation.  No sessions were stopped.
+2020-12-25 13:21:14 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1608857679610 paused.
+2020-12-25 13:21:15 febs-shiro INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'scheduleJobExecutorService'
+2020-12-25 13:21:15 febs-shiro INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'febsAsyncThreadPool'
+2020-12-25 13:21:15 febs-shiro INFO  SpringContextShutdownHook org.springframework.scheduling.quartz.SchedulerFactoryBean Shutting down Quartz Scheduler
+2020-12-25 13:21:15 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1608857679610 shutting down.
+2020-12-25 13:21:15 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1608857679610 paused.
+2020-12-25 13:21:15 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1608857679610 shutdown complete.
+2020-12-25 13:21:15 febs-shiro INFO  SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource start closing ....
+2020-12-25 13:21:15 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource quartz - Shutdown initiated...
+2020-12-25 13:21:15 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource quartz - Shutdown completed.
+2020-12-25 13:21:15 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource base - Shutdown initiated...
+2020-12-25 13:21:15 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource base - Shutdown completed.
+2020-12-25 13:21:15 febs-shiro INFO  SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource all closed success,bye
+2020-12-25 13:21:20 febs-shiro INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 13:21:20 febs-shiro INFO  main cc.mrbird.febs.FebsShiroApplication Starting FebsShiroApplication using Java 1.8.0_181 on LAPTOP-2ADCHJEL with PID 17940 (D:\PROJECT\Backcarmanagement\target\classes started by Lenovo in D:\PROJECT\Backcarmanagement)
+2020-12-25 13:21:20 febs-shiro INFO  main cc.mrbird.febs.FebsShiroApplication The following profiles are active: dev
+2020-12-25 13:21:22 febs-shiro INFO  main org.springframework.context.annotation.AutoProxyRegistrar AutoProxyRegistrar was imported but no annotations were found having both 'mode' and 'proxyTargetClass' attributes of type AdviceMode and boolean respectively. This means that auto proxy creator registration and configuration may not have occurred as intended, and components may not be proxied as expected. Check to ensure that AutoProxyRegistrar has been @Import'ed on the same class where these annotations are declared; otherwise remove the import of AutoProxyRegistrar altogether.
+2020-12-25 13:21:22 febs-shiro INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-25 13:21:22 febs-shiro INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-25 13:21:22 febs-shiro INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 37 ms. Found 0 Redis repository interfaces.
+2020-12-25 13:21:23 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 13:21:23 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$deaf1dab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 13:21:23 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 13:21:23 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 13:21:23 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'febsProperties' of type [cc.mrbird.febs.common.properties.FebsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 13:21:23 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 13:21:23 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'shiroConfig' of type [cc.mrbird.febs.common.authentication.ShiroConfig$$EnhancerBySpringCGLIB$$e0a0ae83] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 13:21:23 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'shiroRealm' of type [cc.mrbird.febs.common.authentication.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 13:21:24 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 13:21:24 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 13:21:24 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 13:21:24 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 13:21:24 febs-shiro INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+2020-12-25 13:21:24 febs-shiro INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-25 13:21:24 febs-shiro INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2020-12-25 13:21:24 febs-shiro INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-25 13:21:25 febs-shiro INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2020-12-25 13:21:25 febs-shiro INFO  main org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 4486 ms
+2020-12-25 13:21:25 febs-shiro INFO  main cc.mrbird.febs.common.xss.XssFilter ------------ xss filter init ------------
+2020-12-25 13:21:25 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource detect P6SPY plugin and enabled it
+2020-12-25 13:21:25 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource base - Starting...
+2020-12-25 13:21:26 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource base - Start completed.
+2020-12-25 13:21:26 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource quartz - Starting...
+2020-12-25 13:21:26 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource quartz - Start completed.
+2020-12-25 13:21:26 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource [quartz] wrap p6spy plugin
+2020-12-25 13:21:26 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [quartz] success
+2020-12-25 13:21:26 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource [base] wrap p6spy plugin
+2020-12-25 13:21:26 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [base] success
+2020-12-25 13:21:26 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource initial loaded [2] datasource,primary datasource named [base]
+2020-12-25 13:21:29 febs-shiro INFO  main org.quartz.impl.StdSchedulerFactory Using default implementation for ThreadExecutor
+2020-12-25 13:21:29 febs-shiro INFO  main org.quartz.core.SchedulerSignalerImpl Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-12-25 13:21:29 febs-shiro INFO  main org.quartz.core.QuartzScheduler Quartz Scheduler v.2.3.2 created.
+2020-12-25 13:21:29 febs-shiro INFO  main org.springframework.scheduling.quartz.LocalDataSourceJobStore Using db table-based data access locking (synchronization).
+2020-12-25 13:21:29 febs-shiro INFO  main org.springframework.scheduling.quartz.LocalDataSourceJobStore JobStoreCMT initialized.
+2020-12-25 13:21:29 febs-shiro INFO  main org.quartz.core.QuartzScheduler Scheduler meta-data: Quartz Scheduler (v2.3.2) 'FEBS_Scheduler' with instanceId 'LAPTOP-2ADCHJEL1608873689151'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2020-12-25 13:21:29 febs-shiro INFO  main org.quartz.impl.StdSchedulerFactory Quartz scheduler 'FEBS_Scheduler' initialized from an externally provided properties instance.
+2020-12-25 13:21:29 febs-shiro INFO  main org.quartz.impl.StdSchedulerFactory Quartz scheduler version: 2.3.2
+2020-12-25 13:21:29 febs-shiro INFO  main org.quartz.core.QuartzScheduler JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@53da2aec
+2020-12-25 13:21:29 febs-shiro INFO  main p6spy 2020-12-25 13:21:29 | 耗时 37 ms | SQL 语句：
+SELECT job_id jobId, bean_name beanName, method_name methodName, params, cron_expression cronExpression, status, remark, create_time createTime FROM t_job ORDER BY job_id;
+2020-12-25 13:21:34 febs-shiro INFO  main org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-12-25 13:21:34 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService
+2020-12-25 13:21:34 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'febsAsyncThreadPool'
+2020-12-25 13:21:34 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService
+2020-12-25 13:21:34 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'scheduleJobExecutorService'
+2020-12-25 13:21:35 febs-shiro INFO  main org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Adding welcome page template: index
+2020-12-25 13:21:35 febs-shiro INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+2020-12-25 13:21:35 febs-shiro INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 13:21:36 febs-shiro INFO  main org.springframework.scheduling.quartz.SchedulerFactoryBean Will start Quartz Scheduler [FEBS_Scheduler] in 1 seconds
+2020-12-25 13:21:36 febs-shiro INFO  main cc.mrbird.febs.FebsShiroApplication Started FebsShiroApplication in 16.892 seconds (JVM running for 19.877)
+2020-12-25 13:21:37 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.springframework.scheduling.quartz.SchedulerFactoryBean Starting Quartz Scheduler now, after delay of 1 seconds
+2020-12-25 13:21:37 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.springframework.scheduling.quartz.LocalDataSourceJobStore ClusterManager: detected 1 failed or restarted instances.
+2020-12-25 13:21:37 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.springframework.scheduling.quartz.LocalDataSourceJobStore ClusterManager: Scanning for instance "LAPTOP-2ADCHJEL1608857679610"'s failed in-progress jobs.
+2020-12-25 13:21:38 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1608873689151 started.
+2020-12-25 13:21:38 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner  __    ___   _      ___   _     ____ _____  ____ 
+2020-12-25 13:21:38 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner / /`  / / \ | |\/| | |_) | |   | |_   | |  | |_  
+2020-12-25 13:21:38 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner \_\_, \_\_/ |_|  | |_|   |_|__ |_|__  |_|  |_|__ 
+2020-12-25 13:21:38 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner                                                       
+2020-12-25 13:21:38 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner FEBS权限系统启动完毕，系统编译打包时间：2020-12-24 09:29:25，地址：http://192.168.3.63:8080/login
+2020-12-25 13:21:38 febs-shiro INFO  RMI TCP Connection(1)-192.168.3.63 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-25 13:21:38 febs-shiro INFO  RMI TCP Connection(1)-192.168.3.63 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2020-12-25 13:21:38 febs-shiro INFO  RMI TCP Connection(1)-192.168.3.63 org.springframework.web.servlet.DispatcherServlet Completed initialization in 4 ms
+2020-12-25 13:21:40 febs-shiro INFO  http-nio-8080-exec-2 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Enabling session validation scheduler...
+2020-12-25 13:21:42 febs-shiro INFO  http-nio-8080-exec-1 cc.mrbird.febs.common.aspect.LimitAspect IP:192.168.3.63 第 1 次访问key为 [limit_get_captcha192.168.3.63]，描述为 [获取验证码] 的接口
+2020-12-25 13:21:48 febs-shiro INFO  http-nio-8080-exec-3 cc.mrbird.febs.common.aspect.LimitAspect IP:192.168.3.63 第 1 次访问key为 [limit_login192.168.3.63]，描述为 [登录接口] 的接口
+2020-12-25 13:21:49 febs-shiro INFO  http-nio-8080-exec-3 p6spy 2020-12-25 13:21:49 | 耗时 34 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'MrBird' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-12-25 13:21:49 febs-shiro INFO  http-nio-8080-exec-3 p6spy 2020-12-25 13:21:49 | 耗时 29 ms | SQL 语句：
+SELECT USER_ID, dept_id FROM t_user_data_permission WHERE (USER_ID = '1');
+2020-12-25 13:21:49 febs-shiro INFO  http-nio-8080-exec-3 p6spy 2020-12-25 13:21:49 | 耗时 176 ms | SQL 语句：
+INSERT INTO t_login_log (USERNAME, LOGIN_TIME, LOCATION, IP, `SYSTEM`, BROWSER) VALUES ('MrBird', '2020-12-25T13:21:49.249+0800', '内网IP|0|0|内网IP|内网IP', '192.168.3.63', 'Windows 10', 'Firefox 84');
+2020-12-25 13:21:49 febs-shiro INFO  http-nio-8080-exec-6 p6spy 2020-12-25 13:21:49 | 耗时 40 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird';
+2020-12-25 13:21:49 febs-shiro INFO  http-nio-8080-exec-6 p6spy 2020-12-25 13:21:49 | 耗时 33 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'MrBird' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-12-25 13:21:49 febs-shiro INFO  http-nio-8080-exec-6 p6spy 2020-12-25 13:21:49 | 耗时 30 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'MrBird' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-12-25 13:21:50 febs-shiro INFO  http-nio-8080-exec-8 p6spy 2020-12-25 13:21:50 | 耗时 32 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird') ORDER BY m.order_num;
+2020-12-25 13:21:51 febs-shiro INFO  http-nio-8080-exec-10 p6spy 2020-12-25 13:21:51 | 耗时 46 ms | SQL 语句：
+SELECT count(1) FROM t_login_log;
+2020-12-25 13:21:51 febs-shiro INFO  http-nio-8080-exec-10 p6spy 2020-12-25 13:21:51 | 耗时 48 ms | SQL 语句：
+SELECT count(1) FROM t_login_log WHERE login_time BETWEEN CURDATE() AND DATE_ADD(CURDATE(), INTERVAL 1 DAY);
+2020-12-25 13:21:51 febs-shiro INFO  Febs-Async-Thread1 p6spy 2020-12-25 13:21:51 | 耗时 72 ms | SQL 语句：
+UPDATE t_user SET LAST_LOGIN_TIME = '2020-12-25T13:21:51.017+0800' WHERE (USERNAME = 'MrBird');
+2020-12-25 13:21:51 febs-shiro INFO  http-nio-8080-exec-10 p6spy 2020-12-25 13:21:51 | 耗时 72 ms | SQL 语句：
+SELECT count(DISTINCT (ip)) FROM t_login_log WHERE login_time BETWEEN CURDATE() AND DATE_ADD(CURDATE(), INTERVAL 1 DAY);
+2020-12-25 13:21:51 febs-shiro INFO  http-nio-8080-exec-10 p6spy 2020-12-25 13:21:51 | 耗时 63 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 GROUP BY days;
+2020-12-25 13:21:51 febs-shiro INFO  http-nio-8080-exec-10 p6spy 2020-12-25 13:21:51 | 耗时 64 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 AND l.username = 'MrBird' GROUP BY days;
+2020-12-25 13:21:54 febs-shiro INFO  http-nio-8080-exec-4 p6spy 2020-12-25 13:21:54 | 耗时 28 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird';
+2020-12-25 13:21:54 febs-shiro INFO  http-nio-8080-exec-4 p6spy 2020-12-25 13:21:54 | 耗时 32 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'MrBird' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-12-25 13:21:54 febs-shiro INFO  http-nio-8080-exec-7 p6spy 2020-12-25 13:21:54 | 耗时 38 ms | SQL 语句：
+SELECT DEPT_ID, PARENT_ID, DEPT_NAME, ORDER_NUM, CREATE_TIME, MODIFY_TIME FROM t_dept;
+2020-12-25 13:21:54 febs-shiro INFO  http-nio-8080-exec-9 p6spy 2020-12-25 13:21:54 | 耗时 29 ms | SQL 语句：
+SELECT COUNT(1) FROM t_users u WHERE 1 = 1;
+2020-12-25 13:21:54 febs-shiro INFO  http-nio-8080-exec-9 p6spy 2020-12-25 13:21:54 | 耗时 27 ms | SQL 语句：
+SELECT u.weChatname weChatname, u.CREATE_TIME CREATE_TIME FROM t_users u ORDER BY Id ASC LIMIT 0,10;
+2020-12-25 13:22:30 febs-shiro INFO  http-nio-8080-exec-3 p6spy 2020-12-25 13:22:30 | 耗时 78 ms | SQL 语句：
+SELECT MENU_ID, PARENT_ID, MENU_NAME, URL, PERMS, ICON, TYPE, ORDER_NUM, CREATE_TIME, MODIFY_TIME FROM t_menu ORDER BY ORDER_NUM ASC;
+2020-12-25 13:23:05 febs-shiro INFO  http-nio-8080-exec-5 p6spy 2020-12-25 13:23:05 | 耗时 59 ms | SQL 语句：
+UPDATE t_menu SET PARENT_ID = 0, MENU_NAME = '生成记录', URL = '/system/recordsgenerated', PERMS = 'recordsgenerated:view', ICON = 'layui-icon-save', TYPE = '0', ORDER_NUM = 2, MODIFY_TIME = '2020-12-25T13:23:04.950+0800' WHERE MENU_ID = 180;
+2020-12-25 13:23:05 febs-shiro INFO  http-nio-8080-exec-2 p6spy 2020-12-25 13:23:05 | 耗时 28 ms | SQL 语句：
+SELECT MENU_ID, PARENT_ID, MENU_NAME, URL, PERMS, ICON, TYPE, ORDER_NUM, CREATE_TIME, MODIFY_TIME FROM t_menu ORDER BY ORDER_NUM ASC;
+2020-12-25 13:23:05 febs-shiro INFO  Febs-Async-Thread2 p6spy 2020-12-25 13:23:05 | 耗时 61 ms | SQL 语句：
+INSERT INTO t_log (USERNAME, OPERATION, TIME, METHOD, PARAMS, IP, CREATE_TIME, LOCATION) VALUES ('MrBird', '修改菜单/按钮', 351, 'cc.mrbird.febs.system.controller.MenuController.updateMenu()', ' menu: "Menu(menuId=180, parentId=0, menuName=生成记录, url=/system/recordsgenerated, perms=recordsgenerated:view, icon=layui-icon-save, type=0, orderNum=2, createTime=null, modifyTime=Fri Dec 25 13:23:04 CST 2020)"', '192.168.3.63', '2020-12-25T13:23:05.105+0800', '内网IP|0|0|内网IP|内网IP');
+2020-12-25 13:23:06 febs-shiro INFO  http-nio-8080-exec-8 p6spy 2020-12-25 13:23:06 | 耗时 156 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird';
+2020-12-25 13:23:06 febs-shiro INFO  http-nio-8080-exec-8 p6spy 2020-12-25 13:23:06 | 耗时 37 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'MrBird' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-12-25 13:23:06 febs-shiro INFO  http-nio-8080-exec-8 p6spy 2020-12-25 13:23:06 | 耗时 36 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'MrBird' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-12-25 13:23:07 febs-shiro INFO  http-nio-8080-exec-5 p6spy 2020-12-25 13:23:07 | 耗时 132 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird';
+2020-12-25 13:23:07 febs-shiro INFO  http-nio-8080-exec-9 p6spy 2020-12-25 13:23:07 | 耗时 130 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird') ORDER BY m.order_num;
+2020-12-25 13:23:07 febs-shiro INFO  http-nio-8080-exec-5 p6spy 2020-12-25 13:23:07 | 耗时 128 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'MrBird' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-12-25 13:23:07 febs-shiro INFO  http-nio-8080-exec-8 p6spy 2020-12-25 13:23:07 | 耗时 93 ms | SQL 语句：
+SELECT MENU_ID, PARENT_ID, MENU_NAME, URL, PERMS, ICON, TYPE, ORDER_NUM, CREATE_TIME, MODIFY_TIME FROM t_menu ORDER BY ORDER_NUM ASC;
+2020-12-25 13:25:09 febs-shiro INFO  http-nio-8080-exec-9 p6spy 2020-12-25 13:25:09 | 耗时 45 ms | SQL 语句：
+SELECT COUNT(1) FROM t_role r WHERE 1 = 1;
+2020-12-25 13:25:09 febs-shiro INFO  http-nio-8080-exec-5 p6spy 2020-12-25 13:25:09 | 耗时 45 ms | SQL 语句：
+SELECT MENU_ID, PARENT_ID, MENU_NAME, URL, PERMS, ICON, TYPE, ORDER_NUM, CREATE_TIME, MODIFY_TIME FROM t_menu ORDER BY ORDER_NUM ASC;
+2020-12-25 13:25:09 febs-shiro INFO  http-nio-8080-exec-9 p6spy 2020-12-25 13:25:09 | 耗时 44 ms | SQL 语句：
+SELECT r.role_id roleId, r.role_name roleName, r.remark, r.create_time createTime, r.modify_time modifyTime, GROUP_CONCAT(rm.menu_id) menuIds FROM t_role r LEFT JOIN t_role_menu rm ON (r.role_id = rm.role_id) WHERE 1 = 1 GROUP BY r.role_id ORDER BY createTime DESC LIMIT 0,10;
+2020-12-25 13:29:13 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1608873689151 paused.
+2020-12-25 13:29:13 febs-shiro INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'scheduleJobExecutorService'
+2020-12-25 13:29:13 febs-shiro INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'febsAsyncThreadPool'
+2020-12-25 13:29:13 febs-shiro INFO  SpringContextShutdownHook org.springframework.scheduling.quartz.SchedulerFactoryBean Shutting down Quartz Scheduler
+2020-12-25 13:29:13 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1608873689151 shutting down.
+2020-12-25 13:29:13 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1608873689151 paused.
+2020-12-25 13:29:13 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1608873689151 shutdown complete.
+2020-12-25 13:29:14 febs-shiro INFO  SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource start closing ....
+2020-12-25 13:29:14 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource quartz - Shutdown initiated...
+2020-12-25 13:29:14 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource quartz - Shutdown completed.
+2020-12-25 13:29:14 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource base - Shutdown initiated...
+2020-12-25 13:29:14 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource base - Shutdown completed.
+2020-12-25 13:29:14 febs-shiro INFO  SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource all closed success,bye
+2020-12-25 13:29:21 febs-shiro INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 13:29:21 febs-shiro INFO  main cc.mrbird.febs.FebsShiroApplication Starting FebsShiroApplication using Java 1.8.0_181 on LAPTOP-2ADCHJEL with PID 18104 (D:\PROJECT\Backcarmanagement\target\classes started by Lenovo in D:\PROJECT\Backcarmanagement)
+2020-12-25 13:29:21 febs-shiro INFO  main cc.mrbird.febs.FebsShiroApplication The following profiles are active: dev
+2020-12-25 13:29:22 febs-shiro INFO  main org.springframework.context.annotation.AutoProxyRegistrar AutoProxyRegistrar was imported but no annotations were found having both 'mode' and 'proxyTargetClass' attributes of type AdviceMode and boolean respectively. This means that auto proxy creator registration and configuration may not have occurred as intended, and components may not be proxied as expected. Check to ensure that AutoProxyRegistrar has been @Import'ed on the same class where these annotations are declared; otherwise remove the import of AutoProxyRegistrar altogether.
+2020-12-25 13:29:23 febs-shiro INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-25 13:29:23 febs-shiro INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-25 13:29:23 febs-shiro INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+2020-12-25 13:29:23 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 13:29:23 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$3e83168e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 13:29:23 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 13:29:23 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 13:29:23 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'febsProperties' of type [cc.mrbird.febs.common.properties.FebsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 13:29:23 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 13:29:23 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'shiroConfig' of type [cc.mrbird.febs.common.authentication.ShiroConfig$$EnhancerBySpringCGLIB$$4074a766] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 13:29:23 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'shiroRealm' of type [cc.mrbird.febs.common.authentication.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 13:29:24 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 13:29:24 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 13:29:24 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 13:29:24 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-25 13:29:24 febs-shiro INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+2020-12-25 13:29:24 febs-shiro INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-25 13:29:24 febs-shiro INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2020-12-25 13:29:24 febs-shiro INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-25 13:29:25 febs-shiro INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2020-12-25 13:29:25 febs-shiro INFO  main org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 3504 ms
+2020-12-25 13:29:25 febs-shiro INFO  main cc.mrbird.febs.common.xss.XssFilter ------------ xss filter init ------------
+2020-12-25 13:29:25 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource detect P6SPY plugin and enabled it
+2020-12-25 13:29:25 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource base - Starting...
+2020-12-25 13:29:26 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource base - Start completed.
+2020-12-25 13:29:26 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource quartz - Starting...
+2020-12-25 13:29:26 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource quartz - Start completed.
+2020-12-25 13:29:26 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource [quartz] wrap p6spy plugin
+2020-12-25 13:29:26 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [quartz] success
+2020-12-25 13:29:26 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource [base] wrap p6spy plugin
+2020-12-25 13:29:26 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [base] success
+2020-12-25 13:29:26 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource initial loaded [2] datasource,primary datasource named [base]
+2020-12-25 13:29:27 febs-shiro INFO  main org.quartz.impl.StdSchedulerFactory Using default implementation for ThreadExecutor
+2020-12-25 13:29:27 febs-shiro INFO  main org.quartz.core.SchedulerSignalerImpl Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-12-25 13:29:27 febs-shiro INFO  main org.quartz.core.QuartzScheduler Quartz Scheduler v.2.3.2 created.
+2020-12-25 13:29:28 febs-shiro INFO  main org.springframework.scheduling.quartz.LocalDataSourceJobStore Using db table-based data access locking (synchronization).
+2020-12-25 13:29:28 febs-shiro INFO  main org.springframework.scheduling.quartz.LocalDataSourceJobStore JobStoreCMT initialized.
+2020-12-25 13:29:28 febs-shiro INFO  main org.quartz.core.QuartzScheduler Scheduler meta-data: Quartz Scheduler (v2.3.2) 'FEBS_Scheduler' with instanceId 'LAPTOP-2ADCHJEL1608874167939'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2020-12-25 13:29:28 febs-shiro INFO  main org.quartz.impl.StdSchedulerFactory Quartz scheduler 'FEBS_Scheduler' initialized from an externally provided properties instance.
+2020-12-25 13:29:28 febs-shiro INFO  main org.quartz.impl.StdSchedulerFactory Quartz scheduler version: 2.3.2
+2020-12-25 13:29:28 febs-shiro INFO  main org.quartz.core.QuartzScheduler JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@673605ef
+2020-12-25 13:29:28 febs-shiro INFO  main p6spy 2020-12-25 13:29:28 | 耗时 30 ms | SQL 语句：
+SELECT job_id jobId, bean_name beanName, method_name methodName, params, cron_expression cronExpression, status, remark, create_time createTime FROM t_job ORDER BY job_id;
+2020-12-25 13:29:32 febs-shiro INFO  main org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-12-25 13:29:32 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService
+2020-12-25 13:29:32 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'febsAsyncThreadPool'
+2020-12-25 13:29:32 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService
+2020-12-25 13:29:32 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'scheduleJobExecutorService'
+2020-12-25 13:29:32 febs-shiro INFO  main org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Adding welcome page template: index
+2020-12-25 13:29:33 febs-shiro INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+2020-12-25 13:29:33 febs-shiro INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 13:29:33 febs-shiro INFO  main org.springframework.scheduling.quartz.SchedulerFactoryBean Will start Quartz Scheduler [FEBS_Scheduler] in 1 seconds
+2020-12-25 13:29:33 febs-shiro INFO  main cc.mrbird.febs.FebsShiroApplication Started FebsShiroApplication in 12.52 seconds (JVM running for 14.165)
+2020-12-25 13:29:34 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner  __    ___   _      ___   _     ____ _____  ____ 
+2020-12-25 13:29:34 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner / /`  / / \ | |\/| | |_) | |   | |_   | |  | |_  
+2020-12-25 13:29:34 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner \_\_, \_\_/ |_|  | |_|   |_|__ |_|__  |_|  |_|__ 
+2020-12-25 13:29:34 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner                                                       
+2020-12-25 13:29:34 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner FEBS权限系统启动完毕，系统编译打包时间：2020-12-24 09:29:25，地址：http://192.168.3.63:8080/login
+2020-12-25 13:29:34 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.springframework.scheduling.quartz.SchedulerFactoryBean Starting Quartz Scheduler now, after delay of 1 seconds
+2020-12-25 13:29:34 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.springframework.scheduling.quartz.LocalDataSourceJobStore ClusterManager: detected 1 failed or restarted instances.
+2020-12-25 13:29:34 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.springframework.scheduling.quartz.LocalDataSourceJobStore ClusterManager: Scanning for instance "LAPTOP-2ADCHJEL1608873689151"'s failed in-progress jobs.
+2020-12-25 13:29:35 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1608874167939 started.
+2020-12-25 13:29:35 febs-shiro INFO  http-nio-8080-exec-1 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-25 13:29:35 febs-shiro INFO  http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2020-12-25 13:29:35 febs-shiro INFO  http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet Completed initialization in 5 ms
+2020-12-25 13:29:35 febs-shiro INFO  http-nio-8080-exec-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Enabling session validation scheduler...
+2020-12-25 13:29:35 febs-shiro INFO  http-nio-8080-exec-5 cc.mrbird.febs.common.aspect.LimitAspect IP:192.168.3.63 第 1 次访问key为 [limit_get_captcha192.168.3.63]，描述为 [获取验证码] 的接口
+2020-12-25 13:29:39 febs-shiro INFO  http-nio-8080-exec-6 cc.mrbird.febs.common.aspect.LimitAspect IP:192.168.3.63 第 1 次访问key为 [limit_login192.168.3.63]，描述为 [登录接口] 的接口
+2020-12-25 13:29:39 febs-shiro INFO  http-nio-8080-exec-6 p6spy 2020-12-25 13:29:39 | 耗时 37 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'MrBird' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-12-25 13:29:39 febs-shiro INFO  http-nio-8080-exec-6 p6spy 2020-12-25 13:29:39 | 耗时 30 ms | SQL 语句：
+SELECT USER_ID, dept_id FROM t_user_data_permission WHERE (USER_ID = '1');
+2020-12-25 13:29:39 febs-shiro INFO  http-nio-8080-exec-6 p6spy 2020-12-25 13:29:39 | 耗时 63 ms | SQL 语句：
+INSERT INTO t_login_log (USERNAME, LOGIN_TIME, LOCATION, IP, `SYSTEM`, BROWSER) VALUES ('MrBird', '2020-12-25T13:29:39.911+0800', '内网IP|0|0|内网IP|内网IP', '192.168.3.63', 'Windows 10', 'Firefox 84');
+2020-12-25 13:29:40 febs-shiro INFO  http-nio-8080-exec-7 p6spy 2020-12-25 13:29:40 | 耗时 34 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird';
+2020-12-25 13:29:40 febs-shiro INFO  http-nio-8080-exec-7 p6spy 2020-12-25 13:29:40 | 耗时 34 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'MrBird' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-12-25 13:29:40 febs-shiro INFO  http-nio-8080-exec-7 p6spy 2020-12-25 13:29:40 | 耗时 41 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'MrBird' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-12-25 13:29:40 febs-shiro INFO  http-nio-8080-exec-10 p6spy 2020-12-25 13:29:40 | 耗时 32 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird') ORDER BY m.order_num;
+2020-12-25 13:29:40 febs-shiro INFO  http-nio-8080-exec-2 p6spy 2020-12-25 13:29:40 | 耗时 31 ms | SQL 语句：
+SELECT count(1) FROM t_login_log;
+2020-12-25 13:29:40 febs-shiro INFO  http-nio-8080-exec-2 p6spy 2020-12-25 13:29:40 | 耗时 31 ms | SQL 语句：
+SELECT count(1) FROM t_login_log WHERE login_time BETWEEN CURDATE() AND DATE_ADD(CURDATE(), INTERVAL 1 DAY);
+2020-12-25 13:29:40 febs-shiro INFO  http-nio-8080-exec-2 p6spy 2020-12-25 13:29:40 | 耗时 31 ms | SQL 语句：
+SELECT count(DISTINCT (ip)) FROM t_login_log WHERE login_time BETWEEN CURDATE() AND DATE_ADD(CURDATE(), INTERVAL 1 DAY);
+2020-12-25 13:29:40 febs-shiro INFO  Febs-Async-Thread1 p6spy 2020-12-25 13:29:40 | 耗时 57 ms | SQL 语句：
+UPDATE t_user SET LAST_LOGIN_TIME = '2020-12-25T13:29:40.768+0800' WHERE (USERNAME = 'MrBird');
+2020-12-25 13:29:40 febs-shiro INFO  http-nio-8080-exec-2 p6spy 2020-12-25 13:29:40 | 耗时 36 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 GROUP BY days;
+2020-12-25 13:29:40 febs-shiro INFO  http-nio-8080-exec-2 p6spy 2020-12-25 13:29:40 | 耗时 32 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 AND l.username = 'MrBird' GROUP BY days;
+2020-12-25 13:29:45 febs-shiro INFO  http-nio-8080-exec-5 p6spy 2020-12-25 13:29:45 | 耗时 28 ms | SQL 语句：
+SELECT COUNT(1) FROM t_user u WHERE 1 = 1;
+2020-12-25 13:29:45 febs-shiro INFO  http-nio-8080-exec-6 p6spy 2020-12-25 13:29:45 | 耗时 44 ms | SQL 语句：
+SELECT DEPT_ID, PARENT_ID, DEPT_NAME, ORDER_NUM, CREATE_TIME, MODIFY_TIME FROM t_dept;
+2020-12-25 13:29:45 febs-shiro INFO  http-nio-8080-exec-5 p6spy 2020-12-25 13:29:45 | 耗时 54 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE 1 = 1 GROUP BY u.username, u.user_id, u.email, u.mobile, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar ORDER BY userId ASC LIMIT 0,10;
+2020-12-25 13:31:18 febs-shiro INFO  http-nio-8080-exec-9 p6spy 2020-12-25 13:31:18 | 耗时 53 ms | SQL 语句：
+SELECT COUNT(1) FROM t_user u WHERE 1 = 1;
+2020-12-25 13:31:18 febs-shiro INFO  http-nio-8080-exec-9 p6spy 2020-12-25 13:31:18 | 耗时 215 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE 1 = 1 GROUP BY u.username, u.user_id, u.email, u.mobile, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar ORDER BY userId ASC LIMIT 0,10;
+2020-12-25 13:47:45 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1608874167939 paused.
+2020-12-25 13:47:45 febs-shiro INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'scheduleJobExecutorService'
+2020-12-25 13:47:45 febs-shiro INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'febsAsyncThreadPool'
+2020-12-25 13:47:45 febs-shiro INFO  SpringContextShutdownHook org.springframework.scheduling.quartz.SchedulerFactoryBean Shutting down Quartz Scheduler
+2020-12-25 13:47:45 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1608874167939 shutting down.
+2020-12-25 13:47:45 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1608874167939 paused.
+2020-12-25 13:47:45 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1608874167939 shutdown complete.
+2020-12-25 13:47:45 febs-shiro INFO  SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource start closing ....
+2020-12-25 13:47:45 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource quartz - Shutdown initiated...
+2020-12-25 13:47:45 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource quartz - Shutdown completed.
+2020-12-25 13:47:45 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource base - Shutdown initiated...
+2020-12-25 13:47:45 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource base - Shutdown completed.
+2020-12-25 13:47:45 febs-shiro INFO  SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource all closed success,bye
