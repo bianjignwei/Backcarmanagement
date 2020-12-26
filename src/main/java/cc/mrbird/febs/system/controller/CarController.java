@@ -45,7 +45,15 @@ public class CarController extends BaseController {
         return new FebsResponse().success().data(count);
     }
 
-
+    /**
+     * 下載圖片
+     */
+    @RequestMapping("downloadPictures/{carId}")
+    public FebsResponse downloadPictures(Car car){
+        Car ccar =this.carService.getById(car.getCarId());
+        String picturename=ccar.getTemplateadress();
+        return new FebsResponse().success().data(picturename);
+    }
 
     @GetMapping("bohui/{carId}")
     @ControllerEndpoint(operation = "驳回数据", exceptionMessage = "驳回数据失败")

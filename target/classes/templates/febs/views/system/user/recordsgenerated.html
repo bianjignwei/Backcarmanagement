@@ -62,6 +62,9 @@
     <a lay-event="bohui" ><i class="layui-icon febs-edit-area febs-volcano">驳回</i></a>
     <a lay-event="edit" ><i class="layui-icon febs-edit-area febs-blue">修改</i></a>
 </script>
+<script type="text/html" id="xiazai">
+    <a lay-event="xiazai" ><i class="layui-icon febs-edit-area febs-blue">下载</i></a>
+</script>
 <script data-th-inline="none" type="text/javascript">
     layui.use(['dropdown', 'jquery', 'laydate', 'form', 'table', 'febs', 'treeSelect'], function () {
         var $ = layui.jquery,
@@ -186,10 +189,13 @@
                     tongguocar(data.carId,data.status);
                 });
             }
-            if (layEvent === 'del') {
-                febs.modal.confirm('驳回', '确定驳回该数据？', function () {
-                    deleteUsers(data.userId);
-                });
+            if (layEvent === 'xiazai') {
+                var carId=data.carId;
+                    var url =ctx + 'car/downloadPictures/'+ carId;
+                    $.get(url,function(data) {
+
+                    });
+
             }
 
             if (layEvent === 'edit') {
@@ -262,7 +268,7 @@
                 url: ctx + 'car/list',
                 cols: [[
                     {type: 'checkbox'},
-                    {field: 'carno', title: '车牌号', width:100},
+                  {field: 'carno', title: '车牌号', width:100},
                     {field: 'depname', title: '车属单位', width: 240},
                     {field: 'framenumber', title: '车架号码', width: 160},
                     {field: 'cartype', title: '车辆类别', width: 90},
@@ -271,7 +277,6 @@
                     {
                         field: 'ava', title: '上传图片', align: 'center', sort: false, width: 200,
                         templet: function (d) {
-                            C=d.page1;
                             return '<div onclick="photograph('+d.carId+');"    ><img  id="displayImg "   width="20px" height="20px" src=' + d.page1 + '>' +
                                 '' +
                                 '<img   width="20px" height="20px" src=' + d.page2 + '>' +
@@ -283,11 +288,11 @@
                         }
                     },
                     {title: '操作', toolbar: '#user-option', width: 180},
+                    {title: '通行证下载',toolbar: '#xiazai', width: 180},
                     {field: 'carId', style:'display:none;'}
                 ]]
             });
         }
-
         function getQueryParams() {
             var params = $searchForm.serializeJson();
             var createTime = params.time;

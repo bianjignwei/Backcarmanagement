@@ -14,7 +14,8 @@
     t.page1,
     t.page2,
     t.page3,
-    t.page4
+    t.page4,
+    t.templateadress
     FROM
     t_car t where 1=1
         <if test="car.carno != null and car.carno != ''">
