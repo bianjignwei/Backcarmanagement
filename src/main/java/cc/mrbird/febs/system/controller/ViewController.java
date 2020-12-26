@@ -5,7 +5,9 @@ import cc.mrbird.febs.common.controller.BaseController;
 import cc.mrbird.febs.common.entity.FebsConstant;
 import cc.mrbird.febs.common.utils.DateUtil;
 import cc.mrbird.febs.common.utils.FebsUtil;
+import cc.mrbird.febs.system.entity.Car;
 import cc.mrbird.febs.system.entity.User;
+import cc.mrbird.febs.system.service.ICarService;
 import cc.mrbird.febs.system.service.IUserDataPermissionService;
 import cc.mrbird.febs.system.service.IUserService;
 import lombok.RequiredArgsConstructor;
@@ -32,6 +34,7 @@ public class ViewController extends BaseController {
     private final IUserService userService;
     private final ShiroHelper shiroHelper;
     private final IUserDataPermissionService userDataPermissionService;
+    private final ICarService carService;
 
     @GetMapping("login")
     @ResponseBody
@@ -99,8 +102,20 @@ public class ViewController extends BaseController {
         return FebsUtil.view("system/user/user");
     }
 
+
+    /**
+     * 首页
+     *
+     * @return
+     */
+    @GetMapping(FebsConstant.VIEW_PREFIX + "system/homepage")
+    public String systemhomepage() {
+        return FebsUtil.view("system/user/homepage");
+    }
+
     /**
      * 用户列表
+     *
      * @return
      */
     @GetMapping(FebsConstant.VIEW_PREFIX + "system/userslist")
@@ -111,12 +126,27 @@ public class ViewController extends BaseController {
 
     /**
      * 生成记录
+     *
      * @return
      */
     @GetMapping(FebsConstant.VIEW_PREFIX + "system/recordsgenerated")
     @RequiresPermissions("recordsgenerated:view")
     public String systemRecordsgenerated() {
         return FebsUtil.view("system/user/recordsgenerated");
+    }
+
+    /**
+     * 修改记录信息
+     *
+     * @param carId
+     * @param model
+     * @return
+     */
+    @GetMapping(FebsConstant.VIEW_PREFIX + "system/user/carupdate/{carId}")
+    @RequiresPermissions("user:carupdate")
+    public String systemCarUpdate(@PathVariable String carId, Model model) {
+        resolveCarModel(carId, model, false);
+        return FebsUtil.view("system/user/carUpdate");
     }
 
 
@@ -196,5 +226,10 @@ public class ViewController extends BaseController {
         if (user.getLastLoginTime() != null) {
             model.addAttribute("lastLoginTime", DateUtil.getDateFormat(user.getLastLoginTime(), DateUtil.FULL_TIME_SPLIT_PATTERN));
         }
+    }
+
+    private void resolveCarModel(String carId, Model model, Boolean transform) {
+        Car car = carService.getById(carId);
+        model.addAttribute("car", car);
     }
 }

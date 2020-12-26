@@ -37,6 +37,14 @@ public class Users  implements Serializable {
     @ExcelField(value = "微信名")
     private String weChatname;
 
+
+    /**
+     * 用户名
+     */
+    @TableField("adress")
+    @ExcelField(value = "头像地址")
+    private String adress;
+
     /**
      * openid
      */
