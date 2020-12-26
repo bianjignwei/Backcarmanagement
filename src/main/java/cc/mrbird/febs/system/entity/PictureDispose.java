@@ -1,6 +1,9 @@
 package cc.mrbird.febs.system.entity;
 
 
+import cc.mrbird.febs.system.service.ICarService;
+import com.baomidou.mybatisplus.extension.service.IService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -18,10 +21,10 @@ import java.io.FileOutputStream;
  */
 @Component
 public class PictureDispose {
-
+    @Autowired
+    private static IService<Car> carService;
     @Value("${image.url}")
     private String imgUrl;
-
 
     public void getFinalImg(String oldName, String newName) {
         //模板图片 html2img 的图片路径
@@ -58,7 +61,6 @@ public class PictureDispose {
             g.dispose();
             //输出图片
             ImageIO.write(background, "png", new FileOutputStream(outPutPath));
-
         } catch (Exception e) {
             e.printStackTrace();
         }

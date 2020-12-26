@@ -122,6 +122,9 @@ public class Car implements Serializable {
     @TableField("openid")
     private String openid;
 
-
+    /**
+     *
+     */
+    private String templateadress;
 
 }

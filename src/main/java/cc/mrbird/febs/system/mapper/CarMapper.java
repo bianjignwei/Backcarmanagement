@@ -30,4 +30,6 @@ public interface CarMapper extends BaseMapper<Car> {
     void updatebohui(String carId);
 
     List<Map<String, String>>  countstatus(String  countValue);
+
+    void updatetongguo(String carId);
 }

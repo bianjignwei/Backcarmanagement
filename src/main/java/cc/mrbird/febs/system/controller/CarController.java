@@ -48,13 +48,17 @@ public class CarController extends BaseController {
 
 
     @GetMapping("bohui/{carId}")
-    @RequiresPermissions("user:delete")
     @ControllerEndpoint(operation = "驳回数据", exceptionMessage = "驳回数据失败")
     public FebsResponse bohui(@NotBlank(message = "{required}") @PathVariable String carId) {
         this.carService.updatebohui(carId);
         return new FebsResponse().success();
     }
-
+    @GetMapping("tongguo/{carId}")
+    @ControllerEndpoint(operation = "审批数据", exceptionMessage = "审批数据失败")
+    public FebsResponse tongguo(@NotBlank(message = "{required}") @PathVariable String carId) {
+        this.carService.updatetongguo(carId);
+        return new FebsResponse().success();
+    }
 
     @PostMapping("update")
     @ControllerEndpoint(operation = "修改数据", exceptionMessage = "修改数据失败")

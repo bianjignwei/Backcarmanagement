@@ -30,4 +30,6 @@ public interface ICarService extends IService<Car> {
     void updateCar(Car car);
 
     List<Map<String, String>>  countstatus(String countValue);
+
+    void updatetongguo(String carId);
 }

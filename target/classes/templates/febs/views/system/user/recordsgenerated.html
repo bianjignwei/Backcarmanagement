@@ -58,7 +58,7 @@
     <span>{{ sex.title }}</span>
 </script>
 <script type="text/html" id="user-option">
-    <a lay-event="del" ><i class="layui-icon febs-edit-area febs-green">通过</i></a>
+    <a lay-event="tongguo" ><i class="layui-icon febs-edit-area febs-green">通过</i></a>
     <a lay-event="bohui" ><i class="layui-icon febs-edit-area febs-volcano">驳回</i></a>
     <a lay-event="edit" ><i class="layui-icon febs-edit-area febs-blue">修改</i></a>
 </script>
@@ -178,9 +178,14 @@
             }
             if (layEvent === 'bohui') {
                 febs.modal.confirm('驳回', '确定驳回该数据？', function () {
-                    bohuicar(data.carId);
+                    bohuicar(data.carId,data.status);
                 });
         }
+            if (layEvent === 'tongguo') {
+                febs.modal.confirm('通过', '确定审批该数据？', function () {
+                    tongguocar(data.carId,data.status);
+                });
+            }
             if (layEvent === 'del') {
                 febs.modal.confirm('驳回', '确定驳回该数据？', function () {
                     deleteUsers(data.userId);
@@ -188,6 +193,10 @@
             }
 
             if (layEvent === 'edit') {
+                if(data.status==1||data.status==2){
+                    febs.alert.success('已通过和已驳回的数据不可再次修改');
+                    return;
+                }
                 febs.modal.open('修改', 'system/user/carupdate/' + data.carId, {
                     area: $(window).width() <= 750 ? '90%' : '50%',
                     offset: '30px',
@@ -303,9 +312,23 @@
                 $query.click();
             });
         }
-        function bohuicar(carId) {
+        function bohuicar(carId,status) {
+            if(status==1||status==2){
+                febs.alert.success('已通过和已驳回的数据不可再次驳回');
+                return;
+            }
             febs.get(ctx + 'car/bohui/' + carId, null, function () {
                 febs.alert.success('驳回数据成功');
+                $query.click();
+            });
+        }
+        function tongguocar(carId,status) {
+            if(status==1||status==2){
+                febs.alert.success('已通过和已驳回的数据不可再次审批');
+                return;
+            }
+            febs.get(ctx + 'getImg/' + carId, null, function () {
+                febs.alert.success('审批数据成功');
                 $query.click();
             });
         }

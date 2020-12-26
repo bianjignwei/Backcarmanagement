@@ -42,6 +42,11 @@ public class CarServiceImpl extends ServiceImpl<CarMapper, Car> implements ICarS
          this.baseMapper.updatebohui(carId);
     }
     @Override
+    public void updatetongguo(String carId) {
+        this.baseMapper.updatetongguo(carId);
+    }
+
+    @Override
     @Transactional(rollbackFor = Exception.class)
     public void updateCar(Car car) {
         car.setModifyTime(new Date());
@@ -52,5 +57,6 @@ public class CarServiceImpl extends ServiceImpl<CarMapper, Car> implements ICarS
     public List<Map<String, String>>   countstatus(String countValue) {
         return this.baseMapper.countstatus(countValue);
     }
+
 
 }

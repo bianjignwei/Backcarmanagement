@@ -70,4 +70,9 @@
     <update id="updatebohui"  parameterType="String"  >
         update  t_car set status=2    where carid= #{carId}
     </update>
+
+
+    <update id="updatetongguo"  parameterType="String"  >
+        update  t_car set status=1   where carid= #{carId}
+    </update>
 </mapper>
