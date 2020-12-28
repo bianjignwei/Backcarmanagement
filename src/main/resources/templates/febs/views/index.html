@@ -70,6 +70,11 @@
                         document.getElementById('shwtg').innerHTML=data.data[i].count;
                     }
                 }
+                if(data.data.length==0){
+                    document.getElementById('dsh').innerHTML=0;
+                    document.getElementById('shtg').innerHTML=0;
+                    document.getElementById('shwtg').innerHTML=0;
+                }
                 //console.log(data.data[0].status)
             },
             error: function(){
@@ -96,8 +101,14 @@
                         document.getElementById('shwtg').innerHTML=data.data[i].count;
                     }
                 }
+                if(data.data.length==0){
+                    document.getElementById('dsh').innerHTML=0;
+                    document.getElementById('shtg').innerHTML=0;
+                    document.getElementById('shwtg').innerHTML=0;
+                }
             //console.log(data.data[0].status)
             },
+
             error: function(){
 
             }
@@ -121,6 +132,11 @@
                     if(data.data[i].status=="2"){
                         document.getElementById('shwtg').innerHTML=data.data[i].count;
                     }
+                }
+                if(data.data.length==0){
+                    document.getElementById('dsh').innerHTML=0;
+                    document.getElementById('shtg').innerHTML=0;
+                    document.getElementById('shwtg').innerHTML=0;
                 }
                 //console.log(data.data[0].status)
             },

@@ -6,7 +6,7 @@
     <artifactId>FEBS-Shiro</artifactId>
     <version>2.0</version>
     <name>febs</name>
-    <description>Spring Boot,Shiro 权限管理系统，https://github.com/wuyouzhuguli/FEBS-Shiro</description>
+    <packaging>war</packaging>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -42,6 +42,20 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <!-- 移除嵌入式tomcat插件 -->
+           <exclusions>
+                      <exclusion>
+                          <groupId>org.springframework.boot</groupId>
+                          <artifactId>spring-boot-starter-tomcat</artifactId>
+                      </exclusion>
+                  </exclusions>
+        </dependency>
+        <!---->
+        <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-servlet-api</artifactId>
+            <version>8.0.36</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
