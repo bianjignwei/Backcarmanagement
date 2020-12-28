@@ -1,7 +1,9 @@
 image:
-  url: C:\Users\Lenovo\Desktop\image\
+  url: /home/java/apache-tomcat-9.0.30/webapps/ytimage/
+images:
+  url: /ytimage/
 server:
-  port: 8080
+  port: 8001
   tomcat:
     uri-encoding: utf-8
 

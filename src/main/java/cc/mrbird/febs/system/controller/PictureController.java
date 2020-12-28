@@ -35,6 +35,10 @@ public class PictureController extends BaseController {
     @Value("${image.url}")
     private String imgUrl;
 
+
+    @Value("${images.url}")
+    private String imgUrls;
+
     @RequestMapping("getImg/{carId}")
     public FebsResponse uploadPictures(Car car) throws IOException {
         Car dao = carService.getById(car.getCarId());
@@ -50,7 +54,7 @@ public class PictureController extends BaseController {
         this.carService.updatetongguo(car.getCarId().toString());
         Car cars=new Car();
         cars.setCarId(car.getCarId());
-        cars.setTemplateadress(imgUrl+imgName);
+        cars.setTemplateadress(imgUrls+imgName);
         carService.saveOrUpdate(cars);
         return new FebsResponse().success();
     }
