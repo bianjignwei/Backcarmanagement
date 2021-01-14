@@ -38,13 +38,16 @@ public class CarController extends BaseController {
         Map<String, Object> dataTable = getDataTable(this.carService.findUserDetailList(car, request));
         return new FebsResponse().success().data(dataTable);
     }
-
+    @GetMapping("statuscount")
+    public FebsResponse statuscount(Car car, QueryRequest request) {
+        Long    counts=this.carService.statuscount();
+        return new FebsResponse().success().data(counts);
+    }
     @GetMapping("countstatus")
     public FebsResponse countstatus(String  countValue) {
         List<Map<String, String>>  count =this.carService.countstatus(countValue);
         return new FebsResponse().success().data(count);
     }
-
     /**
      * 下載圖片
      */
@@ -52,7 +55,7 @@ public class CarController extends BaseController {
     public FebsResponse downloadPictures(Car car){
         Car ccar =this.carService.getById(car.getCarId());
         String picturename=ccar.getTemplateadress();
-        return new FebsResponse().success().data(picturename);
+        return new FebsResponse().success().data(ccar);
     }
 
     @GetMapping("bohui/{carId}")

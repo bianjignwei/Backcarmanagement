@@ -1,0 +1,541 @@
+2021-01-11 10:58:14 febs-shiro INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.1.6.Final
+2021-01-11 10:58:14 febs-shiro INFO  main cc.mrbird.febs.FebsShiroApplication Starting FebsShiroApplication using Java 1.8.0_181 on LAPTOP-2ADCHJEL with PID 16536 (D:\PROJECT\Backcarmanagement\target\classes started by Lenovo in D:\PROJECT\Backcarmanagement)
+2021-01-11 10:58:14 febs-shiro INFO  main cc.mrbird.febs.FebsShiroApplication The following profiles are active: dev
+2021-01-11 10:58:15 febs-shiro INFO  main org.springframework.context.annotation.AutoProxyRegistrar AutoProxyRegistrar was imported but no annotations were found having both 'mode' and 'proxyTargetClass' attributes of type AdviceMode and boolean respectively. This means that auto proxy creator registration and configuration may not have occurred as intended, and components may not be proxied as expected. Check to ensure that AutoProxyRegistrar has been @Import'ed on the same class where these annotations are declared; otherwise remove the import of AutoProxyRegistrar altogether.
+2021-01-11 10:58:15 febs-shiro INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-11 10:58:15 febs-shiro INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-11 10:58:16 febs-shiro INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
+2021-01-11 10:58:16 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 10:58:16 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$2d81375d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 10:58:16 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 10:58:16 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 10:58:16 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'febsProperties' of type [cc.mrbird.febs.common.properties.FebsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 10:58:16 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 10:58:16 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'shiroConfig' of type [cc.mrbird.febs.common.authentication.ShiroConfig$$EnhancerBySpringCGLIB$$2f72c835] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 10:58:16 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'shiroRealm' of type [cc.mrbird.febs.common.authentication.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 10:58:17 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 10:58:17 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 10:58:17 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 10:58:17 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 10:58:17 febs-shiro INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8001 (http)
+2021-01-11 10:58:17 febs-shiro INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8001"]
+2021-01-11 10:58:17 febs-shiro INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-01-11 10:58:17 febs-shiro INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-11 10:58:18 febs-shiro INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-01-11 10:58:18 febs-shiro INFO  main org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 3329 ms
+2021-01-11 10:58:18 febs-shiro INFO  main cc.mrbird.febs.common.xss.XssFilter ------------ xss filter init ------------
+2021-01-11 10:58:18 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource base - Starting...
+2021-01-11 10:58:19 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource base - Start completed.
+2021-01-11 10:58:19 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource quartz - Starting...
+2021-01-11 10:58:19 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource quartz - Start completed.
+2021-01-11 10:58:19 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [quartz] success
+2021-01-11 10:58:19 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [base] success
+2021-01-11 10:58:19 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource initial loaded [2] datasource,primary datasource named [base]
+2021-01-11 10:58:21 febs-shiro INFO  main org.quartz.impl.StdSchedulerFactory Using default implementation for ThreadExecutor
+2021-01-11 10:58:21 febs-shiro INFO  main org.quartz.core.SchedulerSignalerImpl Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-01-11 10:58:21 febs-shiro INFO  main org.quartz.core.QuartzScheduler Quartz Scheduler v.2.3.2 created.
+2021-01-11 10:58:21 febs-shiro INFO  main org.springframework.scheduling.quartz.LocalDataSourceJobStore Using db table-based data access locking (synchronization).
+2021-01-11 10:58:21 febs-shiro INFO  main org.springframework.scheduling.quartz.LocalDataSourceJobStore JobStoreCMT initialized.
+2021-01-11 10:58:21 febs-shiro INFO  main org.quartz.core.QuartzScheduler Scheduler meta-data: Quartz Scheduler (v2.3.2) 'FEBS_Scheduler' with instanceId 'LAPTOP-2ADCHJEL1610333901858'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2021-01-11 10:58:21 febs-shiro INFO  main org.quartz.impl.StdSchedulerFactory Quartz scheduler 'FEBS_Scheduler' initialized from an externally provided properties instance.
+2021-01-11 10:58:21 febs-shiro INFO  main org.quartz.impl.StdSchedulerFactory Quartz scheduler version: 2.3.2
+2021-01-11 10:58:21 febs-shiro INFO  main org.quartz.core.QuartzScheduler JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@3ee200ae
+2021-01-11 10:58:26 febs-shiro INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static com.baomidou.mybatisplus.extension.service.IService cc.mrbird.febs.system.entity.PictureDispose.carService
+2021-01-11 10:58:27 febs-shiro INFO  main org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-01-11 10:58:27 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService
+2021-01-11 10:58:27 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'febsAsyncThreadPool'
+2021-01-11 10:58:27 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService
+2021-01-11 10:58:27 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'scheduleJobExecutorService'
+2021-01-11 10:58:28 febs-shiro INFO  main org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Adding welcome page template: index
+2021-01-11 10:58:28 febs-shiro INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8001"]
+2021-01-11 10:58:28 febs-shiro INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8001 (http) with context path ''
+2021-01-11 10:58:29 febs-shiro INFO  main org.springframework.scheduling.quartz.SchedulerFactoryBean Will start Quartz Scheduler [FEBS_Scheduler] in 1 seconds
+2021-01-11 10:58:29 febs-shiro INFO  main cc.mrbird.febs.FebsShiroApplication Started FebsShiroApplication in 15.727 seconds (JVM running for 18.137)
+2021-01-11 10:58:30 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.springframework.scheduling.quartz.SchedulerFactoryBean Starting Quartz Scheduler now, after delay of 1 seconds
+2021-01-11 10:58:30 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner  __    ___   _      ___   _     ____ _____  ____ 
+2021-01-11 10:58:30 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner / /`  / / \ | |\/| | |_) | |   | |_   | |  | |_  
+2021-01-11 10:58:30 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner \_\_, \_\_/ |_|  | |_|   |_|__ |_|__  |_|  |_|__ 
+2021-01-11 10:58:30 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner                                                       
+2021-01-11 10:58:30 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner FEBS权限系统启动完毕，系统编译打包时间：2020-12-31 13:47:03，地址：http://192.168.3.63:8001/login
+2021-01-11 10:58:31 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.springframework.scheduling.quartz.LocalDataSourceJobStore ClusterManager: detected 1 failed or restarted instances.
+2021-01-11 10:58:31 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.springframework.scheduling.quartz.LocalDataSourceJobStore ClusterManager: Scanning for instance "LAPTOP-2ADCHJEL1609386325721"'s failed in-progress jobs.
+2021-01-11 10:58:31 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610333901858 started.
+2021-01-11 10:58:31 febs-shiro INFO  RMI TCP Connection(2)-192.168.3.63 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-11 10:58:31 febs-shiro INFO  RMI TCP Connection(2)-192.168.3.63 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2021-01-11 10:58:31 febs-shiro INFO  RMI TCP Connection(2)-192.168.3.63 org.springframework.web.servlet.DispatcherServlet Completed initialization in 3 ms
+2021-01-11 10:58:31 febs-shiro INFO  http-nio-8001-exec-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Enabling session validation scheduler...
+2021-01-11 10:58:32 febs-shiro INFO  http-nio-8001-exec-3 cc.mrbird.febs.common.aspect.LimitAspect IP:192.168.3.63 第 1 次访问key为 [limit_get_captcha192.168.3.63]，描述为 [获取验证码] 的接口
+2021-01-11 11:00:45 febs-shiro INFO  http-nio-8001-exec-10 cc.mrbird.febs.common.aspect.LimitAspect IP:192.168.3.63 第 1 次访问key为 [limit_login192.168.3.63]，描述为 [登录接口] 的接口
+2021-01-11 11:00:45 febs-shiro INFO  http-nio-8001-exec-9 cc.mrbird.febs.common.aspect.LimitAspect IP:192.168.3.63 第 1 次访问key为 [limit_get_captcha192.168.3.63]，描述为 [获取验证码] 的接口
+2021-01-11 11:00:49 febs-shiro INFO  http-nio-8001-exec-7 cc.mrbird.febs.common.aspect.LimitAspect IP:192.168.3.63 第 2 次访问key为 [limit_login192.168.3.63]，描述为 [登录接口] 的接口
+2021-01-11 11:14:58 febs-shiro INFO  http-nio-8001-exec-4 cc.mrbird.febs.common.aspect.LimitAspect IP:192.168.3.63 第 1 次访问key为 [limit_get_captcha192.168.3.63]，描述为 [获取验证码] 的接口
+2021-01-11 11:15:01 febs-shiro INFO  http-nio-8001-exec-5 cc.mrbird.febs.common.aspect.LimitAspect IP:192.168.3.63 第 1 次访问key为 [limit_login192.168.3.63]，描述为 [登录接口] 的接口
+2021-01-11 11:23:27 febs-shiro INFO  http-nio-8001-exec-7 cc.mrbird.febs.common.aspect.LimitAspect IP:192.168.3.63 第 1 次访问key为 [limit_get_captcha192.168.3.63]，描述为 [获取验证码] 的接口
+2021-01-11 11:58:31 febs-shiro INFO  SessionValidationThread-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Validating all active sessions...
+2021-01-11 11:58:31 febs-shiro INFO  SessionValidationThread-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Finished session validation.  No sessions were stopped.
+2021-01-11 13:03:16 febs-shiro INFO  SessionValidationThread-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Validating all active sessions...
+2021-01-11 13:03:16 febs-shiro INFO  SessionValidationThread-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Finished session validation.  No sessions were stopped.
+2021-01-11 13:58:29 febs-shiro INFO  SessionValidationThread-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Validating all active sessions...
+2021-01-11 13:58:29 febs-shiro INFO  SessionValidationThread-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Finished session validation.  No sessions were stopped.
+2021-01-11 14:58:29 febs-shiro INFO  SessionValidationThread-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Validating all active sessions...
+2021-01-11 14:58:29 febs-shiro INFO  SessionValidationThread-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Finished session validation.  No sessions were stopped.
+2021-01-11 15:28:41 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610333901858 paused.
+2021-01-11 15:28:41 febs-shiro INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'scheduleJobExecutorService'
+2021-01-11 15:28:41 febs-shiro INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'febsAsyncThreadPool'
+2021-01-11 15:28:41 febs-shiro INFO  SpringContextShutdownHook org.springframework.scheduling.quartz.SchedulerFactoryBean Shutting down Quartz Scheduler
+2021-01-11 15:28:41 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610333901858 shutting down.
+2021-01-11 15:28:41 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610333901858 paused.
+2021-01-11 15:28:41 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610333901858 shutdown complete.
+2021-01-11 15:28:41 febs-shiro INFO  SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource start closing ....
+2021-01-11 15:28:41 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource quartz - Shutdown initiated...
+2021-01-11 15:28:41 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource quartz - Shutdown completed.
+2021-01-11 15:28:41 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource base - Shutdown initiated...
+2021-01-11 15:28:41 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource base - Shutdown completed.
+2021-01-11 15:28:41 febs-shiro INFO  SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource all closed success,bye
+2021-01-11 15:29:16 febs-shiro INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.1.6.Final
+2021-01-11 15:29:16 febs-shiro INFO  main cc.mrbird.febs.FebsShiroApplication Starting FebsShiroApplication using Java 1.8.0_181 on LAPTOP-2ADCHJEL with PID 20200 (D:\PROJECT\Backcarmanagement\target\classes started by Lenovo in D:\PROJECT\Backcarmanagement)
+2021-01-11 15:29:16 febs-shiro INFO  main cc.mrbird.febs.FebsShiroApplication The following profiles are active: dev
+2021-01-11 15:29:17 febs-shiro INFO  main org.springframework.context.annotation.AutoProxyRegistrar AutoProxyRegistrar was imported but no annotations were found having both 'mode' and 'proxyTargetClass' attributes of type AdviceMode and boolean respectively. This means that auto proxy creator registration and configuration may not have occurred as intended, and components may not be proxied as expected. Check to ensure that AutoProxyRegistrar has been @Import'ed on the same class where these annotations are declared; otherwise remove the import of AutoProxyRegistrar altogether.
+2021-01-11 15:29:18 febs-shiro INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-11 15:29:18 febs-shiro INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-11 15:29:18 febs-shiro INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+2021-01-11 15:29:18 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:29:18 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$bb272747] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:29:18 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:29:18 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:29:18 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'febsProperties' of type [cc.mrbird.febs.common.properties.FebsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:29:18 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:29:18 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'shiroConfig' of type [cc.mrbird.febs.common.authentication.ShiroConfig$$EnhancerBySpringCGLIB$$bd18b81f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:29:18 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'shiroRealm' of type [cc.mrbird.febs.common.authentication.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:29:19 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:29:19 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:29:19 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:29:19 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:29:19 febs-shiro INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8001 (http)
+2021-01-11 15:29:19 febs-shiro INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8001"]
+2021-01-11 15:29:19 febs-shiro INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-01-11 15:29:19 febs-shiro INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-11 15:29:19 febs-shiro INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-01-11 15:29:19 febs-shiro INFO  main org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 2819 ms
+2021-01-11 15:29:20 febs-shiro INFO  main cc.mrbird.febs.common.xss.XssFilter ------------ xss filter init ------------
+2021-01-11 15:29:20 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource base - Starting...
+2021-01-11 15:29:20 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource base - Start completed.
+2021-01-11 15:29:20 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource quartz - Starting...
+2021-01-11 15:29:21 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource quartz - Start completed.
+2021-01-11 15:29:21 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [quartz] success
+2021-01-11 15:29:21 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [base] success
+2021-01-11 15:29:21 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource initial loaded [2] datasource,primary datasource named [base]
+2021-01-11 15:29:22 febs-shiro INFO  main org.quartz.impl.StdSchedulerFactory Using default implementation for ThreadExecutor
+2021-01-11 15:29:22 febs-shiro INFO  main org.quartz.core.SchedulerSignalerImpl Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-01-11 15:29:22 febs-shiro INFO  main org.quartz.core.QuartzScheduler Quartz Scheduler v.2.3.2 created.
+2021-01-11 15:29:22 febs-shiro INFO  main org.springframework.scheduling.quartz.LocalDataSourceJobStore Using db table-based data access locking (synchronization).
+2021-01-11 15:29:22 febs-shiro INFO  main org.springframework.scheduling.quartz.LocalDataSourceJobStore JobStoreCMT initialized.
+2021-01-11 15:29:22 febs-shiro INFO  main org.quartz.core.QuartzScheduler Scheduler meta-data: Quartz Scheduler (v2.3.2) 'FEBS_Scheduler' with instanceId 'LAPTOP-2ADCHJEL1610350162560'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2021-01-11 15:29:22 febs-shiro INFO  main org.quartz.impl.StdSchedulerFactory Quartz scheduler 'FEBS_Scheduler' initialized from an externally provided properties instance.
+2021-01-11 15:29:22 febs-shiro INFO  main org.quartz.impl.StdSchedulerFactory Quartz scheduler version: 2.3.2
+2021-01-11 15:29:22 febs-shiro INFO  main org.quartz.core.QuartzScheduler JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@690e4b00
+2021-01-11 15:29:25 febs-shiro INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static com.baomidou.mybatisplus.extension.service.IService cc.mrbird.febs.system.entity.PictureDispose.carService
+2021-01-11 15:29:26 febs-shiro INFO  main org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-01-11 15:29:26 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService
+2021-01-11 15:29:26 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'febsAsyncThreadPool'
+2021-01-11 15:29:26 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService
+2021-01-11 15:29:26 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'scheduleJobExecutorService'
+2021-01-11 15:29:26 febs-shiro INFO  main org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Adding welcome page template: index
+2021-01-11 15:29:27 febs-shiro INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8001"]
+2021-01-11 15:29:27 febs-shiro INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8001 (http) with context path ''
+2021-01-11 15:29:27 febs-shiro INFO  main org.springframework.scheduling.quartz.SchedulerFactoryBean Will start Quartz Scheduler [FEBS_Scheduler] in 1 seconds
+2021-01-11 15:29:27 febs-shiro INFO  main cc.mrbird.febs.FebsShiroApplication Started FebsShiroApplication in 11.32 seconds (JVM running for 13.062)
+2021-01-11 15:29:28 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner  __    ___   _      ___   _     ____ _____  ____ 
+2021-01-11 15:29:28 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner / /`  / / \ | |\/| | |_) | |   | |_   | |  | |_  
+2021-01-11 15:29:28 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner \_\_, \_\_/ |_|  | |_|   |_|__ |_|__  |_|  |_|__ 
+2021-01-11 15:29:28 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner                                                       
+2021-01-11 15:29:28 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner FEBS权限系统启动完毕，系统编译打包时间：2020-12-31 13:47:03，地址：http://192.168.3.63:8001/login
+2021-01-11 15:29:28 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.springframework.scheduling.quartz.SchedulerFactoryBean Starting Quartz Scheduler now, after delay of 1 seconds
+2021-01-11 15:29:28 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.springframework.scheduling.quartz.LocalDataSourceJobStore ClusterManager: detected 1 failed or restarted instances.
+2021-01-11 15:29:28 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.springframework.scheduling.quartz.LocalDataSourceJobStore ClusterManager: Scanning for instance "LAPTOP-2ADCHJEL1610333901858"'s failed in-progress jobs.
+2021-01-11 15:29:29 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610350162560 started.
+2021-01-11 15:29:29 febs-shiro INFO  http-nio-8001-exec-4 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-11 15:29:29 febs-shiro INFO  http-nio-8001-exec-4 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2021-01-11 15:29:29 febs-shiro INFO  http-nio-8001-exec-4 org.springframework.web.servlet.DispatcherServlet Completed initialization in 19 ms
+2021-01-11 15:29:29 febs-shiro INFO  http-nio-8001-exec-4 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Enabling session validation scheduler...
+2021-01-11 15:29:30 febs-shiro INFO  http-nio-8001-exec-3 cc.mrbird.febs.common.aspect.LimitAspect IP:192.168.3.63 第 1 次访问key为 [limit_get_captcha192.168.3.63]，描述为 [获取验证码] 的接口
+2021-01-11 15:30:39 febs-shiro INFO  http-nio-8001-exec-10 cc.mrbird.febs.common.aspect.LimitAspect IP:192.168.3.63 第 1 次访问key为 [limit_login192.168.3.63]，描述为 [登录接口] 的接口
+2021-01-11 15:31:15 febs-shiro INFO  http-nio-8001-exec-4 cc.mrbird.febs.common.aspect.LimitAspect IP:192.168.3.63 第 1 次访问key为 [limit_get_captcha192.168.3.63]，描述为 [获取验证码] 的接口
+2021-01-11 15:55:37 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610350162560 paused.
+2021-01-11 15:55:37 febs-shiro INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'scheduleJobExecutorService'
+2021-01-11 15:55:37 febs-shiro INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'febsAsyncThreadPool'
+2021-01-11 15:55:37 febs-shiro INFO  SpringContextShutdownHook org.springframework.scheduling.quartz.SchedulerFactoryBean Shutting down Quartz Scheduler
+2021-01-11 15:55:37 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610350162560 shutting down.
+2021-01-11 15:55:37 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610350162560 paused.
+2021-01-11 15:55:37 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610350162560 shutdown complete.
+2021-01-11 15:55:37 febs-shiro INFO  SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource start closing ....
+2021-01-11 15:55:37 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource quartz - Shutdown initiated...
+2021-01-11 15:55:37 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource quartz - Shutdown completed.
+2021-01-11 15:55:37 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource base - Shutdown initiated...
+2021-01-11 15:55:37 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource base - Shutdown completed.
+2021-01-11 15:55:37 febs-shiro INFO  SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource all closed success,bye
+2021-01-11 15:55:46 febs-shiro INFO  main cc.mrbird.febs.FebsShiroApplication Starting FebsShiroApplication using Java 1.8.0_181 on LAPTOP-2ADCHJEL with PID 11992 (D:\PROJECT\Backcarmanagement\target\classes started by Lenovo in D:\PROJECT\Backcarmanagement)
+2021-01-11 15:55:46 febs-shiro INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.1.6.Final
+2021-01-11 15:55:46 febs-shiro INFO  main cc.mrbird.febs.FebsShiroApplication The following profiles are active: dev
+2021-01-11 15:55:47 febs-shiro INFO  main org.springframework.context.annotation.AutoProxyRegistrar AutoProxyRegistrar was imported but no annotations were found having both 'mode' and 'proxyTargetClass' attributes of type AdviceMode and boolean respectively. This means that auto proxy creator registration and configuration may not have occurred as intended, and components may not be proxied as expected. Check to ensure that AutoProxyRegistrar has been @Import'ed on the same class where these annotations are declared; otherwise remove the import of AutoProxyRegistrar altogether.
+2021-01-11 15:55:47 febs-shiro INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-11 15:55:47 febs-shiro INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-11 15:55:47 febs-shiro INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+2021-01-11 15:55:48 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:55:48 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$1dd57eae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:55:48 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:55:48 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:55:48 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'febsProperties' of type [cc.mrbird.febs.common.properties.FebsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:55:48 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:55:48 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'shiroConfig' of type [cc.mrbird.febs.common.authentication.ShiroConfig$$EnhancerBySpringCGLIB$$1fc70f86] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:55:48 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'shiroRealm' of type [cc.mrbird.febs.common.authentication.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:55:48 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:55:48 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:55:48 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:55:48 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:55:49 febs-shiro INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8001 (http)
+2021-01-11 15:55:49 febs-shiro INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8001"]
+2021-01-11 15:55:49 febs-shiro INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-01-11 15:55:49 febs-shiro INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-11 15:55:49 febs-shiro INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-01-11 15:55:49 febs-shiro INFO  main org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 2919 ms
+2021-01-11 15:55:49 febs-shiro INFO  main cc.mrbird.febs.common.xss.XssFilter ------------ xss filter init ------------
+2021-01-11 15:55:49 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource base - Starting...
+2021-01-11 15:55:50 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource base - Start completed.
+2021-01-11 15:55:50 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource quartz - Starting...
+2021-01-11 15:55:50 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource quartz - Start completed.
+2021-01-11 15:55:50 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [quartz] success
+2021-01-11 15:55:50 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [base] success
+2021-01-11 15:55:50 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource initial loaded [2] datasource,primary datasource named [base]
+2021-01-11 15:55:52 febs-shiro INFO  main org.quartz.impl.StdSchedulerFactory Using default implementation for ThreadExecutor
+2021-01-11 15:55:52 febs-shiro INFO  main org.quartz.core.SchedulerSignalerImpl Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-01-11 15:55:52 febs-shiro INFO  main org.quartz.core.QuartzScheduler Quartz Scheduler v.2.3.2 created.
+2021-01-11 15:55:52 febs-shiro INFO  main org.springframework.scheduling.quartz.LocalDataSourceJobStore Using db table-based data access locking (synchronization).
+2021-01-11 15:55:52 febs-shiro INFO  main org.springframework.scheduling.quartz.LocalDataSourceJobStore JobStoreCMT initialized.
+2021-01-11 15:55:52 febs-shiro INFO  main org.quartz.core.QuartzScheduler Scheduler meta-data: Quartz Scheduler (v2.3.2) 'FEBS_Scheduler' with instanceId 'LAPTOP-2ADCHJEL1610351752108'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2021-01-11 15:55:52 febs-shiro INFO  main org.quartz.impl.StdSchedulerFactory Quartz scheduler 'FEBS_Scheduler' initialized from an externally provided properties instance.
+2021-01-11 15:55:52 febs-shiro INFO  main org.quartz.impl.StdSchedulerFactory Quartz scheduler version: 2.3.2
+2021-01-11 15:55:52 febs-shiro INFO  main org.quartz.core.QuartzScheduler JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@7a85dc58
+2021-01-11 15:55:54 febs-shiro INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static com.baomidou.mybatisplus.extension.service.IService cc.mrbird.febs.system.entity.PictureDispose.carService
+2021-01-11 15:55:55 febs-shiro INFO  main org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-01-11 15:55:55 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService
+2021-01-11 15:55:55 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'febsAsyncThreadPool'
+2021-01-11 15:55:55 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService
+2021-01-11 15:55:55 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'scheduleJobExecutorService'
+2021-01-11 15:55:55 febs-shiro INFO  main org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Adding welcome page template: index
+2021-01-11 15:55:56 febs-shiro INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8001"]
+2021-01-11 15:55:56 febs-shiro INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8001 (http) with context path ''
+2021-01-11 15:55:56 febs-shiro INFO  main org.springframework.scheduling.quartz.SchedulerFactoryBean Will start Quartz Scheduler [FEBS_Scheduler] in 1 seconds
+2021-01-11 15:55:56 febs-shiro INFO  main cc.mrbird.febs.FebsShiroApplication Started FebsShiroApplication in 11.199 seconds (JVM running for 13.024)
+2021-01-11 15:55:57 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner  __    ___   _      ___   _     ____ _____  ____ 
+2021-01-11 15:55:57 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner / /`  / / \ | |\/| | |_) | |   | |_   | |  | |_  
+2021-01-11 15:55:57 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner \_\_, \_\_/ |_|  | |_|   |_|__ |_|__  |_|  |_|__ 
+2021-01-11 15:55:57 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner                                                       
+2021-01-11 15:55:57 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner FEBS权限系统启动完毕，系统编译打包时间：2020-12-31 13:47:03，地址：http://192.168.3.63:8001/login
+2021-01-11 15:55:57 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.springframework.scheduling.quartz.SchedulerFactoryBean Starting Quartz Scheduler now, after delay of 1 seconds
+2021-01-11 15:55:58 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610351752108 started.
+2021-01-11 15:55:58 febs-shiro INFO  http-nio-8001-exec-1 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-11 15:55:58 febs-shiro INFO  http-nio-8001-exec-1 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2021-01-11 15:55:58 febs-shiro INFO  http-nio-8001-exec-1 org.springframework.web.servlet.DispatcherServlet Completed initialization in 6 ms
+2021-01-11 15:55:58 febs-shiro INFO  http-nio-8001-exec-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Enabling session validation scheduler...
+2021-01-11 15:55:59 febs-shiro INFO  http-nio-8001-exec-2 cc.mrbird.febs.common.aspect.LimitAspect IP:192.168.3.63 第 1 次访问key为 [limit_get_captcha192.168.3.63]，描述为 [获取验证码] 的接口
+2021-01-11 15:56:13 febs-shiro INFO  QuartzScheduler_FEBS_Scheduler-LAPTOP-2ADCHJEL1610351752108_ClusterManager org.springframework.scheduling.quartz.LocalDataSourceJobStore ClusterManager: detected 1 failed or restarted instances.
+2021-01-11 15:56:13 febs-shiro INFO  QuartzScheduler_FEBS_Scheduler-LAPTOP-2ADCHJEL1610351752108_ClusterManager org.springframework.scheduling.quartz.LocalDataSourceJobStore ClusterManager: Scanning for instance "LAPTOP-2ADCHJEL1610350162560"'s failed in-progress jobs.
+2021-01-11 15:57:40 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610351752108 paused.
+2021-01-11 15:57:41 febs-shiro INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'scheduleJobExecutorService'
+2021-01-11 15:57:41 febs-shiro INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'febsAsyncThreadPool'
+2021-01-11 15:57:41 febs-shiro INFO  SpringContextShutdownHook org.springframework.scheduling.quartz.SchedulerFactoryBean Shutting down Quartz Scheduler
+2021-01-11 15:57:41 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610351752108 shutting down.
+2021-01-11 15:57:41 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610351752108 paused.
+2021-01-11 15:57:41 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610351752108 shutdown complete.
+2021-01-11 15:57:41 febs-shiro INFO  SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource start closing ....
+2021-01-11 15:57:41 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource quartz - Shutdown initiated...
+2021-01-11 15:57:41 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource quartz - Shutdown completed.
+2021-01-11 15:57:41 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource base - Shutdown initiated...
+2021-01-11 15:57:41 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource base - Shutdown completed.
+2021-01-11 15:57:41 febs-shiro INFO  SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource all closed success,bye
+2021-01-11 15:57:45 febs-shiro INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.1.6.Final
+2021-01-11 15:57:45 febs-shiro INFO  main cc.mrbird.febs.FebsShiroApplication Starting FebsShiroApplication using Java 1.8.0_181 on LAPTOP-2ADCHJEL with PID 18604 (D:\PROJECT\Backcarmanagement\target\classes started by Lenovo in D:\PROJECT\Backcarmanagement)
+2021-01-11 15:57:45 febs-shiro INFO  main cc.mrbird.febs.FebsShiroApplication The following profiles are active: dev
+2021-01-11 15:57:46 febs-shiro INFO  main org.springframework.context.annotation.AutoProxyRegistrar AutoProxyRegistrar was imported but no annotations were found having both 'mode' and 'proxyTargetClass' attributes of type AdviceMode and boolean respectively. This means that auto proxy creator registration and configuration may not have occurred as intended, and components may not be proxied as expected. Check to ensure that AutoProxyRegistrar has been @Import'ed on the same class where these annotations are declared; otherwise remove the import of AutoProxyRegistrar altogether.
+2021-01-11 15:57:46 febs-shiro INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-11 15:57:46 febs-shiro INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-11 15:57:46 febs-shiro INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 26 ms. Found 0 Redis repository interfaces.
+2021-01-11 15:57:46 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:57:46 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$5cb78009] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:57:46 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:57:46 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:57:46 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'febsProperties' of type [cc.mrbird.febs.common.properties.FebsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:57:47 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:57:47 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'shiroConfig' of type [cc.mrbird.febs.common.authentication.ShiroConfig$$EnhancerBySpringCGLIB$$5ea910e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:57:47 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'shiroRealm' of type [cc.mrbird.febs.common.authentication.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:57:47 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:57:47 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:57:47 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:57:47 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 15:57:47 febs-shiro INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8001 (http)
+2021-01-11 15:57:47 febs-shiro INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8001"]
+2021-01-11 15:57:47 febs-shiro INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-01-11 15:57:47 febs-shiro INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-11 15:57:47 febs-shiro INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-01-11 15:57:47 febs-shiro INFO  main org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 2753 ms
+2021-01-11 15:57:48 febs-shiro INFO  main cc.mrbird.febs.common.xss.XssFilter ------------ xss filter init ------------
+2021-01-11 15:57:48 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource base - Starting...
+2021-01-11 15:57:48 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource base - Start completed.
+2021-01-11 15:57:48 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource quartz - Starting...
+2021-01-11 15:57:49 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource quartz - Start completed.
+2021-01-11 15:57:49 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [quartz] success
+2021-01-11 15:57:49 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [base] success
+2021-01-11 15:57:49 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource initial loaded [2] datasource,primary datasource named [base]
+2021-01-11 15:57:50 febs-shiro INFO  main org.quartz.impl.StdSchedulerFactory Using default implementation for ThreadExecutor
+2021-01-11 15:57:50 febs-shiro INFO  main org.quartz.core.SchedulerSignalerImpl Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-01-11 15:57:50 febs-shiro INFO  main org.quartz.core.QuartzScheduler Quartz Scheduler v.2.3.2 created.
+2021-01-11 15:57:50 febs-shiro INFO  main org.springframework.scheduling.quartz.LocalDataSourceJobStore Using db table-based data access locking (synchronization).
+2021-01-11 15:57:50 febs-shiro INFO  main org.springframework.scheduling.quartz.LocalDataSourceJobStore JobStoreCMT initialized.
+2021-01-11 15:57:50 febs-shiro INFO  main org.quartz.core.QuartzScheduler Scheduler meta-data: Quartz Scheduler (v2.3.2) 'FEBS_Scheduler' with instanceId 'LAPTOP-2ADCHJEL1610351870618'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2021-01-11 15:57:50 febs-shiro INFO  main org.quartz.impl.StdSchedulerFactory Quartz scheduler 'FEBS_Scheduler' initialized from an externally provided properties instance.
+2021-01-11 15:57:50 febs-shiro INFO  main org.quartz.impl.StdSchedulerFactory Quartz scheduler version: 2.3.2
+2021-01-11 15:57:50 febs-shiro INFO  main org.quartz.core.QuartzScheduler JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@5b028f58
+2021-01-11 15:57:53 febs-shiro INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static com.baomidou.mybatisplus.extension.service.IService cc.mrbird.febs.system.entity.PictureDispose.carService
+2021-01-11 15:57:54 febs-shiro INFO  main org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-01-11 15:57:54 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService
+2021-01-11 15:57:54 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'febsAsyncThreadPool'
+2021-01-11 15:57:54 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService
+2021-01-11 15:57:54 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'scheduleJobExecutorService'
+2021-01-11 15:57:54 febs-shiro INFO  main org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Adding welcome page template: index
+2021-01-11 15:57:55 febs-shiro INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8001"]
+2021-01-11 15:57:55 febs-shiro INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8001 (http) with context path ''
+2021-01-11 15:57:55 febs-shiro INFO  main org.springframework.scheduling.quartz.SchedulerFactoryBean Will start Quartz Scheduler [FEBS_Scheduler] in 1 seconds
+2021-01-11 15:57:55 febs-shiro INFO  main cc.mrbird.febs.FebsShiroApplication Started FebsShiroApplication in 10.98 seconds (JVM running for 12.681)
+2021-01-11 15:57:56 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner  __    ___   _      ___   _     ____ _____  ____ 
+2021-01-11 15:57:56 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner / /`  / / \ | |\/| | |_) | |   | |_   | |  | |_  
+2021-01-11 15:57:56 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner \_\_, \_\_/ |_|  | |_|   |_|__ |_|__  |_|  |_|__ 
+2021-01-11 15:57:56 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner                                                       
+2021-01-11 15:57:56 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner FEBS权限系统启动完毕，系统编译打包时间：2020-12-31 13:47:03，地址：http://192.168.3.63:8001/login
+2021-01-11 15:57:56 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.springframework.scheduling.quartz.SchedulerFactoryBean Starting Quartz Scheduler now, after delay of 1 seconds
+2021-01-11 15:57:56 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.springframework.scheduling.quartz.LocalDataSourceJobStore ClusterManager: detected 1 failed or restarted instances.
+2021-01-11 15:57:56 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.springframework.scheduling.quartz.LocalDataSourceJobStore ClusterManager: Scanning for instance "LAPTOP-2ADCHJEL1610351752108"'s failed in-progress jobs.
+2021-01-11 15:57:56 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610351870618 started.
+2021-01-11 15:57:57 febs-shiro INFO  http-nio-8001-exec-1 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-11 15:57:57 febs-shiro INFO  http-nio-8001-exec-1 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2021-01-11 15:57:57 febs-shiro INFO  http-nio-8001-exec-1 org.springframework.web.servlet.DispatcherServlet Completed initialization in 3 ms
+2021-01-11 15:57:57 febs-shiro INFO  http-nio-8001-exec-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Enabling session validation scheduler...
+2021-01-11 15:57:58 febs-shiro INFO  http-nio-8001-exec-2 cc.mrbird.febs.common.aspect.LimitAspect IP:192.168.3.63 第 1 次访问key为 [limit_get_captcha192.168.3.63]，描述为 [获取验证码] 的接口
+2021-01-11 15:58:20 febs-shiro INFO  http-nio-8001-exec-3 cc.mrbird.febs.common.aspect.LimitAspect IP:192.168.3.63 第 1 次访问key为 [limit_login192.168.3.63]，描述为 [登录接口] 的接口
+2021-01-11 16:05:20 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610351870618 paused.
+2021-01-11 16:05:21 febs-shiro INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'scheduleJobExecutorService'
+2021-01-11 16:05:21 febs-shiro INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'febsAsyncThreadPool'
+2021-01-11 16:05:21 febs-shiro INFO  SpringContextShutdownHook org.springframework.scheduling.quartz.SchedulerFactoryBean Shutting down Quartz Scheduler
+2021-01-11 16:05:21 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610351870618 shutting down.
+2021-01-11 16:05:21 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610351870618 paused.
+2021-01-11 16:05:21 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610351870618 shutdown complete.
+2021-01-11 16:05:21 febs-shiro INFO  SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource start closing ....
+2021-01-11 16:05:21 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource quartz - Shutdown initiated...
+2021-01-11 16:05:21 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource quartz - Shutdown completed.
+2021-01-11 16:05:21 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource base - Shutdown initiated...
+2021-01-11 16:05:21 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource base - Shutdown completed.
+2021-01-11 16:05:21 febs-shiro INFO  SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource all closed success,bye
+2021-01-11 16:05:25 febs-shiro INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.1.6.Final
+2021-01-11 16:05:25 febs-shiro INFO  main cc.mrbird.febs.FebsShiroApplication Starting FebsShiroApplication using Java 1.8.0_181 on LAPTOP-2ADCHJEL with PID 11368 (D:\PROJECT\Backcarmanagement\target\classes started by Lenovo in D:\PROJECT\Backcarmanagement)
+2021-01-11 16:05:25 febs-shiro INFO  main cc.mrbird.febs.FebsShiroApplication The following profiles are active: dev
+2021-01-11 16:05:26 febs-shiro INFO  main org.springframework.context.annotation.AutoProxyRegistrar AutoProxyRegistrar was imported but no annotations were found having both 'mode' and 'proxyTargetClass' attributes of type AdviceMode and boolean respectively. This means that auto proxy creator registration and configuration may not have occurred as intended, and components may not be proxied as expected. Check to ensure that AutoProxyRegistrar has been @Import'ed on the same class where these annotations are declared; otherwise remove the import of AutoProxyRegistrar altogether.
+2021-01-11 16:05:26 febs-shiro INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-11 16:05:26 febs-shiro INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-11 16:05:26 febs-shiro INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 26 ms. Found 0 Redis repository interfaces.
+2021-01-11 16:05:27 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 16:05:27 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$19f66a8f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 16:05:27 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 16:05:27 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 16:05:27 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'febsProperties' of type [cc.mrbird.febs.common.properties.FebsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 16:05:27 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 16:05:27 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'shiroConfig' of type [cc.mrbird.febs.common.authentication.ShiroConfig$$EnhancerBySpringCGLIB$$1be7fb67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 16:05:27 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'shiroRealm' of type [cc.mrbird.febs.common.authentication.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 16:05:28 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 16:05:28 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 16:05:28 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 16:05:28 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 16:05:28 febs-shiro INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8001 (http)
+2021-01-11 16:05:28 febs-shiro INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8001"]
+2021-01-11 16:05:28 febs-shiro INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-01-11 16:05:28 febs-shiro INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-11 16:05:28 febs-shiro INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-01-11 16:05:28 febs-shiro INFO  main org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 2931 ms
+2021-01-11 16:05:28 febs-shiro INFO  main cc.mrbird.febs.common.xss.XssFilter ------------ xss filter init ------------
+2021-01-11 16:05:28 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource base - Starting...
+2021-01-11 16:05:29 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource base - Start completed.
+2021-01-11 16:05:29 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource quartz - Starting...
+2021-01-11 16:05:29 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource quartz - Start completed.
+2021-01-11 16:05:29 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [quartz] success
+2021-01-11 16:05:29 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [base] success
+2021-01-11 16:05:29 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource initial loaded [2] datasource,primary datasource named [base]
+2021-01-11 16:05:31 febs-shiro INFO  main org.quartz.impl.StdSchedulerFactory Using default implementation for ThreadExecutor
+2021-01-11 16:05:31 febs-shiro INFO  main org.quartz.core.SchedulerSignalerImpl Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-01-11 16:05:31 febs-shiro INFO  main org.quartz.core.QuartzScheduler Quartz Scheduler v.2.3.2 created.
+2021-01-11 16:05:31 febs-shiro INFO  main org.springframework.scheduling.quartz.LocalDataSourceJobStore Using db table-based data access locking (synchronization).
+2021-01-11 16:05:31 febs-shiro INFO  main org.springframework.scheduling.quartz.LocalDataSourceJobStore JobStoreCMT initialized.
+2021-01-11 16:05:31 febs-shiro INFO  main org.quartz.core.QuartzScheduler Scheduler meta-data: Quartz Scheduler (v2.3.2) 'FEBS_Scheduler' with instanceId 'LAPTOP-2ADCHJEL1610352331148'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2021-01-11 16:05:31 febs-shiro INFO  main org.quartz.impl.StdSchedulerFactory Quartz scheduler 'FEBS_Scheduler' initialized from an externally provided properties instance.
+2021-01-11 16:05:31 febs-shiro INFO  main org.quartz.impl.StdSchedulerFactory Quartz scheduler version: 2.3.2
+2021-01-11 16:05:31 febs-shiro INFO  main org.quartz.core.QuartzScheduler JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@7bad18f5
+2021-01-11 16:05:34 febs-shiro INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static com.baomidou.mybatisplus.extension.service.IService cc.mrbird.febs.system.entity.PictureDispose.carService
+2021-01-11 16:05:35 febs-shiro INFO  main org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-01-11 16:05:35 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService
+2021-01-11 16:05:35 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'febsAsyncThreadPool'
+2021-01-11 16:05:35 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService
+2021-01-11 16:05:35 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'scheduleJobExecutorService'
+2021-01-11 16:05:35 febs-shiro INFO  main org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Adding welcome page template: index
+2021-01-11 16:05:35 febs-shiro INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8001"]
+2021-01-11 16:05:35 febs-shiro INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8001 (http) with context path ''
+2021-01-11 16:05:36 febs-shiro INFO  main org.springframework.scheduling.quartz.SchedulerFactoryBean Will start Quartz Scheduler [FEBS_Scheduler] in 1 seconds
+2021-01-11 16:05:36 febs-shiro INFO  main cc.mrbird.febs.FebsShiroApplication Started FebsShiroApplication in 11.351 seconds (JVM running for 13.1)
+2021-01-11 16:05:37 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner  __    ___   _      ___   _     ____ _____  ____ 
+2021-01-11 16:05:37 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner / /`  / / \ | |\/| | |_) | |   | |_   | |  | |_  
+2021-01-11 16:05:37 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner \_\_, \_\_/ |_|  | |_|   |_|__ |_|__  |_|  |_|__ 
+2021-01-11 16:05:37 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner                                                       
+2021-01-11 16:05:37 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner FEBS权限系统启动完毕，系统编译打包时间：2020-12-31 13:47:03，地址：http://192.168.3.63:8001/login
+2021-01-11 16:05:37 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.springframework.scheduling.quartz.SchedulerFactoryBean Starting Quartz Scheduler now, after delay of 1 seconds
+2021-01-11 16:05:37 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610352331148 started.
+2021-01-11 16:05:37 febs-shiro INFO  RMI TCP Connection(4)-192.168.3.63 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-11 16:05:37 febs-shiro INFO  RMI TCP Connection(4)-192.168.3.63 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2021-01-11 16:05:37 febs-shiro INFO  RMI TCP Connection(4)-192.168.3.63 org.springframework.web.servlet.DispatcherServlet Completed initialization in 4 ms
+2021-01-11 16:05:37 febs-shiro INFO  http-nio-8001-exec-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Enabling session validation scheduler...
+2021-01-11 16:05:38 febs-shiro INFO  http-nio-8001-exec-9 cc.mrbird.febs.common.aspect.LimitAspect IP:192.168.3.63 第 1 次访问key为 [limit_get_captcha192.168.3.63]，描述为 [获取验证码] 的接口
+2021-01-11 16:05:44 febs-shiro INFO  http-nio-8001-exec-10 cc.mrbird.febs.common.aspect.LimitAspect IP:192.168.3.63 第 1 次访问key为 [limit_login192.168.3.63]，描述为 [登录接口] 的接口
+2021-01-11 16:05:52 febs-shiro INFO  QuartzScheduler_FEBS_Scheduler-LAPTOP-2ADCHJEL1610352331148_ClusterManager org.springframework.scheduling.quartz.LocalDataSourceJobStore ClusterManager: detected 1 failed or restarted instances.
+2021-01-11 16:05:52 febs-shiro INFO  QuartzScheduler_FEBS_Scheduler-LAPTOP-2ADCHJEL1610352331148_ClusterManager org.springframework.scheduling.quartz.LocalDataSourceJobStore ClusterManager: Scanning for instance "LAPTOP-2ADCHJEL1610351870618"'s failed in-progress jobs.
+2021-01-11 16:06:08 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610352331148 paused.
+2021-01-11 16:06:08 febs-shiro INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'scheduleJobExecutorService'
+2021-01-11 16:06:08 febs-shiro INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'febsAsyncThreadPool'
+2021-01-11 16:06:08 febs-shiro INFO  SpringContextShutdownHook org.springframework.scheduling.quartz.SchedulerFactoryBean Shutting down Quartz Scheduler
+2021-01-11 16:06:08 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610352331148 shutting down.
+2021-01-11 16:06:08 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610352331148 paused.
+2021-01-11 16:06:08 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610352331148 shutdown complete.
+2021-01-11 16:06:09 febs-shiro INFO  SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource start closing ....
+2021-01-11 16:06:09 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource quartz - Shutdown initiated...
+2021-01-11 16:06:09 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource quartz - Shutdown completed.
+2021-01-11 16:06:09 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource base - Shutdown initiated...
+2021-01-11 16:06:09 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource base - Shutdown completed.
+2021-01-11 16:06:09 febs-shiro INFO  SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource all closed success,bye
+2021-01-11 17:33:51 febs-shiro INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.1.6.Final
+2021-01-11 17:33:51 febs-shiro INFO  main cc.mrbird.febs.FebsShiroApplication Starting FebsShiroApplication using Java 1.8.0_181 on LAPTOP-2ADCHJEL with PID 868 (D:\PROJECT\Backcarmanagement\target\classes started by Lenovo in D:\PROJECT\Backcarmanagement)
+2021-01-11 17:33:51 febs-shiro INFO  main cc.mrbird.febs.FebsShiroApplication The following profiles are active: dev
+2021-01-11 17:33:53 febs-shiro INFO  main org.springframework.context.annotation.AutoProxyRegistrar AutoProxyRegistrar was imported but no annotations were found having both 'mode' and 'proxyTargetClass' attributes of type AdviceMode and boolean respectively. This means that auto proxy creator registration and configuration may not have occurred as intended, and components may not be proxied as expected. Check to ensure that AutoProxyRegistrar has been @Import'ed on the same class where these annotations are declared; otherwise remove the import of AutoProxyRegistrar altogether.
+2021-01-11 17:33:53 febs-shiro INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-11 17:33:53 febs-shiro INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-11 17:33:53 febs-shiro INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 27 ms. Found 0 Redis repository interfaces.
+2021-01-11 17:33:53 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 17:33:53 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$640fd090] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 17:33:53 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 17:33:53 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 17:33:53 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'febsProperties' of type [cc.mrbird.febs.common.properties.FebsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 17:33:54 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 17:33:54 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'shiroConfig' of type [cc.mrbird.febs.common.authentication.ShiroConfig$$EnhancerBySpringCGLIB$$66016168] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 17:33:54 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'shiroRealm' of type [cc.mrbird.febs.common.authentication.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 17:33:54 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 17:33:54 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 17:33:54 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 17:33:54 febs-shiro INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-11 17:33:54 febs-shiro INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8001 (http)
+2021-01-11 17:33:54 febs-shiro INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8001"]
+2021-01-11 17:33:54 febs-shiro INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-01-11 17:33:54 febs-shiro INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-11 17:33:55 febs-shiro INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-01-11 17:33:55 febs-shiro INFO  main org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 3077 ms
+2021-01-11 17:33:55 febs-shiro INFO  main cc.mrbird.febs.common.xss.XssFilter ------------ xss filter init ------------
+2021-01-11 17:33:55 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource base - Starting...
+2021-01-11 17:33:55 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource base - Start completed.
+2021-01-11 17:33:55 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource quartz - Starting...
+2021-01-11 17:33:56 febs-shiro INFO  main com.zaxxer.hikari.HikariDataSource quartz - Start completed.
+2021-01-11 17:33:56 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [quartz] success
+2021-01-11 17:33:56 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [base] success
+2021-01-11 17:33:56 febs-shiro INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource initial loaded [2] datasource,primary datasource named [base]
+2021-01-11 17:33:57 febs-shiro INFO  main org.quartz.impl.StdSchedulerFactory Using default implementation for ThreadExecutor
+2021-01-11 17:33:57 febs-shiro INFO  main org.quartz.core.SchedulerSignalerImpl Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-01-11 17:33:57 febs-shiro INFO  main org.quartz.core.QuartzScheduler Quartz Scheduler v.2.3.2 created.
+2021-01-11 17:33:58 febs-shiro INFO  main org.springframework.scheduling.quartz.LocalDataSourceJobStore Using db table-based data access locking (synchronization).
+2021-01-11 17:33:58 febs-shiro INFO  main org.springframework.scheduling.quartz.LocalDataSourceJobStore JobStoreCMT initialized.
+2021-01-11 17:33:58 febs-shiro INFO  main org.quartz.core.QuartzScheduler Scheduler meta-data: Quartz Scheduler (v2.3.2) 'FEBS_Scheduler' with instanceId 'LAPTOP-2ADCHJEL1610357637957'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2021-01-11 17:33:58 febs-shiro INFO  main org.quartz.impl.StdSchedulerFactory Quartz scheduler 'FEBS_Scheduler' initialized from an externally provided properties instance.
+2021-01-11 17:33:58 febs-shiro INFO  main org.quartz.impl.StdSchedulerFactory Quartz scheduler version: 2.3.2
+2021-01-11 17:33:58 febs-shiro INFO  main org.quartz.core.QuartzScheduler JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@2648aa1b
+2021-01-11 17:34:01 febs-shiro INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static com.baomidou.mybatisplus.extension.service.IService cc.mrbird.febs.system.entity.PictureDispose.carService
+2021-01-11 17:34:02 febs-shiro INFO  main org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-01-11 17:34:02 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService
+2021-01-11 17:34:02 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'febsAsyncThreadPool'
+2021-01-11 17:34:02 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService
+2021-01-11 17:34:02 febs-shiro INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'scheduleJobExecutorService'
+2021-01-11 17:34:02 febs-shiro INFO  main org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Adding welcome page template: index
+2021-01-11 17:34:02 febs-shiro INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8001"]
+2021-01-11 17:34:02 febs-shiro INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8001 (http) with context path ''
+2021-01-11 17:34:03 febs-shiro INFO  main org.springframework.scheduling.quartz.SchedulerFactoryBean Will start Quartz Scheduler [FEBS_Scheduler] in 1 seconds
+2021-01-11 17:34:03 febs-shiro INFO  main cc.mrbird.febs.FebsShiroApplication Started FebsShiroApplication in 12.107 seconds (JVM running for 14.513)
+2021-01-11 17:34:04 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner  __    ___   _      ___   _     ____ _____  ____ 
+2021-01-11 17:34:04 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner / /`  / / \ | |\/| | |_) | |   | |_   | |  | |_  
+2021-01-11 17:34:04 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner \_\_, \_\_/ |_|  | |_|   |_|__ |_|__  |_|  |_|__ 
+2021-01-11 17:34:04 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner                                                       
+2021-01-11 17:34:04 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.springframework.scheduling.quartz.SchedulerFactoryBean Starting Quartz Scheduler now, after delay of 1 seconds
+2021-01-11 17:34:04 febs-shiro INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner FEBS权限系统启动完毕，系统编译打包时间：2021-01-11 16:06:33，地址：http://192.168.3.63:8001/login
+2021-01-11 17:34:04 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.springframework.scheduling.quartz.LocalDataSourceJobStore ClusterManager: detected 1 failed or restarted instances.
+2021-01-11 17:34:04 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.springframework.scheduling.quartz.LocalDataSourceJobStore ClusterManager: Scanning for instance "LAPTOP-2ADCHJEL1610352331148"'s failed in-progress jobs.
+2021-01-11 17:34:04 febs-shiro INFO  Quartz Scheduler [FEBS_Scheduler] org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610357637957 started.
+2021-01-11 17:34:05 febs-shiro INFO  http-nio-8001-exec-1 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-11 17:34:05 febs-shiro INFO  http-nio-8001-exec-1 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2021-01-11 17:34:05 febs-shiro INFO  http-nio-8001-exec-1 org.springframework.web.servlet.DispatcherServlet Completed initialization in 3 ms
+2021-01-11 17:34:05 febs-shiro INFO  http-nio-8001-exec-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Enabling session validation scheduler...
+2021-01-11 17:34:06 febs-shiro INFO  http-nio-8001-exec-2 cc.mrbird.febs.common.aspect.LimitAspect IP:192.168.3.63 第 1 次访问key为 [limit_get_captcha192.168.3.63]，描述为 [获取验证码] 的接口
+2021-01-11 17:34:59 febs-shiro INFO  http-nio-8001-exec-4 cc.mrbird.febs.common.aspect.LimitAspect IP:192.168.3.63 第 1 次访问key为 [limit_login192.168.3.63]，描述为 [登录接口] 的接口
+2021-01-11 17:44:11 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610357637957 paused.
+2021-01-11 17:44:11 febs-shiro INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'scheduleJobExecutorService'
+2021-01-11 17:44:11 febs-shiro INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'febsAsyncThreadPool'
+2021-01-11 17:44:11 febs-shiro INFO  SpringContextShutdownHook org.springframework.scheduling.quartz.SchedulerFactoryBean Shutting down Quartz Scheduler
+2021-01-11 17:44:11 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610357637957 shutting down.
+2021-01-11 17:44:11 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610357637957 paused.
+2021-01-11 17:44:11 febs-shiro INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_LAPTOP-2ADCHJEL1610357637957 shutdown complete.
+2021-01-11 17:44:11 febs-shiro INFO  SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource start closing ....
+2021-01-11 17:44:11 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource quartz - Shutdown initiated...
+2021-01-11 17:44:11 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource quartz - Shutdown completed.
+2021-01-11 17:44:11 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource base - Shutdown initiated...
+2021-01-11 17:44:11 febs-shiro INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource base - Shutdown completed.
+2021-01-11 17:44:11 febs-shiro INFO  SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource all closed success,bye

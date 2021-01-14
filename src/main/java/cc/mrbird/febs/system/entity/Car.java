@@ -105,6 +105,14 @@ public class Car implements Serializable {
     private Date modifyTime;
 
     /**
+     * 修改时间
+     */
+    @TableField("audittime")
+    @ExcelField(value = "修改时间", writeConverter = TimeConverter.class)
+    private Date audittime;
+
+
+    /**
      *车主姓名
      */
     @TableField("czname")

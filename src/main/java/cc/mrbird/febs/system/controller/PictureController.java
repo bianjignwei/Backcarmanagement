@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
+import java.util.Date;
 import java.util.UUID;
 
 /**
@@ -55,6 +56,7 @@ public class PictureController extends BaseController {
         Car cars=new Car();
         cars.setCarId(car.getCarId());
         cars.setTemplateadress(imgUrls+imgName);
+        cars.setAudittime(new Date());
         carService.saveOrUpdate(cars);
         return new FebsResponse().success();
     }

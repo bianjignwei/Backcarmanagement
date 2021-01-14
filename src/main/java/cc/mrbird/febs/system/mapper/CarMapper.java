@@ -31,5 +31,6 @@ public interface CarMapper extends BaseMapper<Car> {
 
     List<Map<String, String>>  countstatus(String  countValue);
 
+    long statuscountdetail();
     void updatetongguo(String carId);
 }

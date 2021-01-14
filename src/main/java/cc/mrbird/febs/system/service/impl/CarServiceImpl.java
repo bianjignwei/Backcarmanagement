@@ -47,6 +47,11 @@ public class CarServiceImpl extends ServiceImpl<CarMapper, Car> implements ICarS
     }
 
     @Override
+    public Long statuscount() {
+        return this.baseMapper.statuscountdetail();
+    }
+
+    @Override
     @Transactional(rollbackFor = Exception.class)
     public void updateCar(Car car) {
         car.setModifyTime(new Date());

@@ -89,6 +89,8 @@
     <orderEntry type="library" name="Maven: org.hibernate.validator:hibernate-validator:6.1.6.Final" level="project" />
     <orderEntry type="library" name="Maven: jakarta.validation:jakarta.validation-api:2.0.2" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.logging:jboss-logging:3.4.1.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.bouncycastle:bcprov-jdk16:1.46" level="project" />
+    <orderEntry type="library" name="Maven: net.coobird:thumbnailator:0.4.8" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-pool2:2.9.0" level="project" />
     <orderEntry type="library" name="Maven: com.github.xuwei-k:html2image:0.1.0" level="project" />
     <orderEntry type="library" name="Maven: com.openhtmltopdf:openhtmltopdf-core:0.0.1-RC9" level="project" />
