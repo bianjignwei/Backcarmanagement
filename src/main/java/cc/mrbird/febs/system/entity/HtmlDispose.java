@@ -104,7 +104,7 @@ public class HtmlDispose {
                 "    </style>\n" +
                 "</head>\n" +
                 "<body>\n" +
-                "<div style=\"width: 794px;height: 1123px;\">\n" +
+                "<div style=\"width: 794px;height: 1123px; font-weight: 700 \">\n" +
                 "    <div style=\"height: 40px; width: 600px\"></div>\n" +
                 "    <!--第一份-->\n" +
                 "    <div style=\"height: 320px;width: 750px;margin-right: auto;margin-left: auto\">\n" +
