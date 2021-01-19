@@ -194,10 +194,20 @@
             if (layEvent === 'xiazai') {
                 var carId=data.carId;
                     var url =ctx + 'car/downloadPictures/'+ carId;
+                    console.log(data)
                     $.get(url,function(data) {
-
+                        var x=new XMLHttpRequest();
+                        x.open("GET",data.templateadress, true);
+                        x.responseType = 'blob';
+                        x.onload=function(e){
+                            var url = window.URL.createObjectURL(x.response)
+                            var a = document.createElement('a');
+                            a.href = url
+                            a.download =data.carno
+                            a.click()
+                        }
+                        x.send();
                     });
-
             }
 
             if (layEvent === 'edit') {
